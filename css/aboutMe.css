@@ -1,6 +1,5 @@
 .masthead {
   text-align: center;
-  color: var(--purple1);
   background-image: url("../img/header-bg.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11,15 +10,26 @@
   padding-top: 100px;
 }
 .intro-heading-name {
-  color: var(--lightteal);
+  color: var(--white);
   font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  border-bottom: 3px solid var(--lightteal) ;
+  border-bottom: 3px solid var(--white);
+  padding-left: 20px;
 }
 .intro-heading {
   font-weight: bold;
   font-size: 200%;
   margin-bottom: 15px;
+}
+.intro-heading-span {
+  color: var(--orange);
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 80%;
+  text-transform: uppercase;
+  animation: flip 2s infinite;
+  animation-delay: calc(0.2s * var(--i));
 }
 .intro-heading-h4 {
   color: var(--darkpurple);
@@ -33,6 +43,7 @@
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: large;
+  text-align: justify;
 }
 .aboutMe-heading {
   padding-top: 30px;
@@ -62,18 +73,33 @@
   text-align: center;
   background-color: var(--purple);
 }
+@keyframes flip {
+  0%,
+  80% {
+    transform: rotateY(360deg);
+  }
+}
 
 @media (min-width: 768px) {
   .intro-heading-name {
-    color: var(--lightteal);
+    color: var(--white);
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border-bottom: 4px solid var(--lightteal) ;
+    border-bottom: 4px solid var(--white);
+    padding-left: 20px;
   }
   .intro-heading {
-    font-weight: bold;
-    font-size: 250%;
+    position: relative;
     margin-bottom: 15px;
+  }
+  .intro-heading-span {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 100%;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(0.2s * var(--i));
   }
   .intro-heading-h4 {
     color: var(--darkpurple);
@@ -81,6 +107,7 @@
     font-weight: bolder;
   }
   .intro-heading-para1 {
+    text-align: justify;
     padding-left: 20%;
     padding-right: 20%;
     color: var(--gray2);
@@ -95,5 +122,11 @@
     font-size: 250%;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
+  }
+  @keyframes flip {
+    0%,
+    80% {
+      transform: rotateY(360deg);
+    }
   }
 }
