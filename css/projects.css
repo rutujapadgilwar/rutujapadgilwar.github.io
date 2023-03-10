@@ -1,0 +1,121 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-top: 70px;
+    background-color: var(--lightsky);
+  }
+  .section-title {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .project-card {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 30px;
+    padding: 50px 50px;
+  }
+  .project-photo {
+    width: 30%;
+  }
+  .vieMyResumeButton {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: x-large;
+    width: 35%;
+    height: 50px;
+    display: block;
+    text-align: center;
+    border: 0;
+    background-color: var(--purple3);
+  }
+  .resumeButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 100px;
+  }
+  .project-info {
+    margin-right: 24px;
+  }
+  .project-title {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .project-tags {
+    display: flex;
+    max-width: 60%;
+    flex-wrap: wrap;
+  }
+  .tag {
+    text-align: center;
+    padding: 4px 8px;
+    background-color: var(--purple1);
+    border-radius: 4px;
+    margin-right: 6px;
+    margin-bottom: 4px;
+    color: var(--white);
+  }
+  .project-links a {
+    text-decoration: none;
+    color: var(--black);
+  }
+  .project-links {
+    margin-top: 6px;
+    display: flex;
+  }
+  .link-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--purple1);
+    color: var(--white);
+    width: max-content;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-right: 6px;
+  }
+  .link-button i {
+    display: flex;
+    align-items: center;
+    mask-repeat: 4px;
+  }
+  
+  @media only screen and (max-width: 720px) {
+    .projects {
+      padding-top: 130px;
+    }
+    .project-photo {
+      width: 90%;
+    }
+    .project-card {
+      flex-direction: column-reverse;
+    }
+    .project-info {
+      margin-left: 0px;
+      margin-top: 10px;
+    }
+    .project-tags {
+      max-width: 100%;
+    }
+    .vieMyResumeButton {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: bold;
+      font-size: x-large;
+      align-items: center;
+      width: 55%;
+      height: 50px;
+      display: block;
+      text-align: center;
+      border: 0;
+      background-color: var(--purple3);
+    }
+  }
+  

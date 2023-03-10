@@ -17,149 +17,280 @@
     <link rel="stylesheet" href="../css/navbar.css" />
     <link rel="stylesheet" href="../css/aboutMe.css" />
     <link rel="stylesheet" href="../css/workTimeline.css" />
+    <link rel="stylesheet" href="../css/projects.css" />
   </head>
-  <header>
-    <nav>
-      <ul class="navBarClass" id="navBarClass">
-        <li class="navItem">
-          <a class="navItemLink" href="index.html" aria-label="home icon">
-            <i class="fa fa-home" style="color: var(--white)"></i>
-          </a>
-        </li>
-        <li class="navItem">
-          <a href="#about" class="navItemLink"> About </a>
-        </li>
-        <li class="navItem">
-          <a href="#work" class="navItemLink">Work</a>
-        </li>
-        <li class="navItem">
-          <a href="#projects" class="navItemLink">Project</a>
-        </li>
-        <li class="navItem">
-          <a href="#contact" class="navItemLink">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <!-- About Me -->
-  <section id="about">
-    <div class="aboutContainer">
-      <div class="masthead">
-        <div class="intro-text">
-          <img
-            src="../img/rutuja_self.png"
-            alt="intro_Image_Of_Me"
-            class="selfImage"
-          />
-          <div class="intro-heading">
-            <span class="intro-heading-span" style="--i: 1">H</span>
-            <span class="intro-heading-span" style="--i: 2">E</span>
-            <span class="intro-heading-span" style="--i: 3">L</span>
-            <span class="intro-heading-span" style="--i: 4">L</span>
-            <span class="intro-heading-span" style="--i: 5">O</span>
-            <span class="intro-heading-span" style="--i: 6">, </span>
-            <span class="intro-heading-span" style="--i: 7">I</span>
-            <span class="intro-heading-span" style="--i: 8">'</span>
-            <span class="intro-heading-span" style="--i: 9">M</span>
-            <span class="intro-heading-name"> RUTUJA PADGILWAR! </span>
-            <h4 class="intro-heading-h4">"Software Developer"</h4>
+  <body>
+    <header>
+      <nav>
+        <ul class="navBarClass" id="navBarClass">
+          <li class="navItem">
+            <a class="navItemLink" href="index.html" aria-label="home icon">
+              <i class="fa fa-home" style="color: var(--white)"></i>
+            </a>
+          </li>
+          <li class="navItem">
+            <a href="#about" class="navItemLink"> About </a>
+          </li>
+          <li class="navItem">
+            <a href="#work" class="navItemLink">Work</a>
+          </li>
+          <li class="navItem">
+            <a href="#projects" class="navItemLink">Project</a>
+          </li>
+          <li class="navItem">
+            <a href="#contact" class="navItemLink">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- About Me -->
+    <section id="about">
+      <div class="aboutContainer">
+        <div class="masthead">
+          <div class="intro-text">
+            <img
+              src="../img/rutuja_self.png"
+              alt="intro_Image_Of_Me"
+              class="selfImage"
+            />
+            <div class="intro-heading">
+              <span class="intro-heading-span" style="--i: 1">H</span>
+              <span class="intro-heading-span" style="--i: 2">E</span>
+              <span class="intro-heading-span" style="--i: 3">L</span>
+              <span class="intro-heading-span" style="--i: 4">L</span>
+              <span class="intro-heading-span" style="--i: 5">O</span>
+              <span class="intro-heading-span" style="--i: 6">, </span>
+              <span class="intro-heading-span" style="--i: 7">I</span>
+              <span class="intro-heading-span" style="--i: 8">'</span>
+              <span class="intro-heading-span" style="--i: 9">M</span>
+              <span class="intro-heading-name"> RUTUJA PADGILWAR! </span>
+              <h4 class="intro-heading-h4">"Software Developer"</h4>
+            </div>
+            <br />
+            <a class="vieMyWorkButton" href="#projects">View my work -></a>
+          </div>
+        </div>
+        <div>
+          <h3 class="aboutMe-heading">About Me</h3>
+          <p class="intro-heading-para1">
+            &emsp;&emsp;I am Computer Science Graduate student at Portland State
+            University. I am very interested to build tools that help others. In
+            my undergrad, I started one project to convert the sign language
+            into text. For this I gathered the dataset and tried to design deep
+            learning model which recognize the sign language. In this journey I
+            learned many things and increases my interest in make the things
+            which makes difference.
+            <br />
+            &emsp;&emsp;Moreover, I have work experience with Infosys, pune. I'm
+            now looking for internship opportunities to put my academic skills
+            to use and get real-world business experience.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--Work Timeline section-->
+    <section id="work">
+      <div class="workContainer">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="sectionWorkHeading text-uppercase">Previous Work</h2>
           </div>
           <br />
-          <a class="vieMyWorkButton" href="#projects">View my work -></a>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="timeline">
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img
+                    class="rounded-circle img-fluid"
+                    src="../img/infosys.png"
+                    alt="Infosy Icon"
+                  />
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>June, 2021 - July, 2022</h3>
+                    <h4 class="subheading">Full Time Job at Infosys</h4>
+                    <h5 class="subheading" style="font-size: 75%">
+                      Title: Software Engineer
+                    </h5>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">
+                      Worked on to provide network security to the client.
+                      Moreover, worked on cisco FMC, VPN implementation, VPN
+                      tunnel migration IKEv1 to IKEv2, checkpoint firewall,
+                      setting policies on palalto and FortiGate firewall
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-image">
+                  <img
+                    class="rounded-circle img-fluid"
+                    src="../img/mindbowser.jpeg"
+                    alt="mindbowser Icon"
+                  />
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>June, 2020 - June, 2021</h4>
+                    <h4 class="subheading">
+                      Full Time Job at Mindbowser nfo Solutions Pvt. Ltd. Pune,
+                      India
+                    </h4>
+                    <h4 class="subheading" style="font-size: 75%">
+                      Title: Software Developer
+                    </h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">
+                      Worked with the team, designed a solution to customer.
+                      Worked on machine learning algorithms, Design and develop
+                      classification, regression model for client.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <h4>Be Part <br />Of My <br />Story!</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div>
-        <h3 class="aboutMe-heading">About Me</h3>
-        <p class="intro-heading-para1">
-          &emsp;&emsp;I am Computer Science Graduate student at Portland State
-          University. I am very interested to build tools that help others. In
-          my undergrad, I started one project to convert the sign language into
-          text. For this I gathered the dataset and tried to design deep
-          learning model which recognize the sign language. In this journey I
-          learned many things and increases my interest in make the things which
-          makes difference.
-          <br />
-          &emsp;&emsp;Moreover, I have work experience with Infosys, pune. I'm
-          now looking for internship opportunities to put my academic skills to
-          use and get real-world business experience.
-        </p>
-      </div>
-    </div>
-  </section>
-  <!--Work Timeline section-->
-  <section id="work">
-    <div class="workContainer">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="sectionWorkHeading text-uppercase">Previous Work</h2>
+    </section>
+    <!--Project section-->
+    <section id="projects">
+      <div class="projects">
+        <h3 class="section-title">Projects</h3>
+        <div>
+          <div class="project-card">
+            <div class="project-info">
+              <h4 class="project-title">Digital Souviner - Travel Memories</h4>
+              <div class="project-links">
+                <a
+                  class="project-link"
+                  href="https://digital-travel-memories.netlify.app/"
+                  ><div class="link-button">
+                    <i class="fa fa-globe"></i>Demo
+                  </div></a
+                ><a
+                  class="project-link"
+                  href="https://github.com/schoure98/image_gallery_fullstack
+                "
+                  ><div class="link-button">
+                    <i class="fa fa-github"></i><span>Github</span>
+                  </div></a
+                >
+              </div>
+              <h5>
+                Project Purpose: People always buy souvenirs whenever they
+                travel places. With memories now people will have the
+                opportunity to store the souvenirs digitally with personalized
+                images and thus share them with others.
+              </h5>
+              <p>
+                My portion  of the project was working on firebase configuration
+                and connections. The storing the images and all meta data into
+                database. Additionally, I worked on the update, delete, and
+                search functions. For the search functionality, I used the
+                Google Search API's autocomplete feature to get location
+                suggestions. I used "react bootstrap" for the front end. I made
+                a modal, a form, and search cards using react bootstrap.
+              </p>
+              <div class="project-tags">
+                <h6 class="tag">ReactJS</h6>
+                <h6 class="tag">Javascript</h6>
+                <h6 class="tag">Firebase</h6>
+                <h6 class="tag">Html/Css</h6>
+              </div>
+            </div>
+            <img
+              src="../img/travelMemories.gif"
+              alt="travel memory project"
+              class="project-photo"
+            />
+          </div>
+          <div class="project-card">
+            <div class="project-info">
+              <h4 class="project-title">
+                Website to collect ASL video dataset
+              </h4>
+              <div class="project-links">
+                <a class="project-link" href="https://asl-dataset.web.app"
+                  ><div class="link-button">
+                    <i class="fa fa-globe"></i>Demo
+                  </div></a
+                >
+              </div>
+              <h5>
+                The purpose of this project is to alleviate the discrepancy,
+                anyone can communicate with auditory individuals quickly, so
+                they can feel more comfortable while interacting with other
+                people. There are several communication techniques are
+                available, but we are trying to build even more powerful
+                framework that translates sign language into text/voice language
+                in real time.
+                <br />
+                For that Efficient datasets are required to complete this
+                objective. So I design this websit to collect the dataset.
+              </h5>
+              <p>
+                It is simple website using ReactJS, Html/CSS, firebase to
+                collect the dataset for 50 ASL and ISL sign language category.
+              </p>
+              <div class="project-tags">
+                <h6 class="tag">ReactJS</h6>
+                <h6 class="tag">Javascript</h6>
+                <h6 class="tag">Firebase</h6>
+                <h6 class="tag">Html/Css</h6>
+              </div>
+            </div>
+            <img
+              src="../img/ASLProject.webp"
+              alt="asl gif"
+              class="project-photo"
+            />
+          </div>
+          <div class="project-card">
+            <div class="project-info">
+              <h4 class="project-title">Rubik’s Cube Solver Using Python</h4>
+              <div class="project-links">
+                <a
+                  class="project-link"
+                  href="https://github.com/rutujapadgilwar06/rubik-s-cube-solver
+                "
+                  ><div class="link-button">
+                    <i class="fa fa-github"></i>Github
+                  </div></a
+                >
+              </div>
+              <h5>
+                Project Purpose: develop an application to solve the Rubik’s
+                Cube using a camera
+              </h5>
+              <p>
+                In this project I have created the program to solve Rubik’s cube
+                by capturing the all faces using camera and then shown the steps
+                for solution. Applied Kociemba module of python.
+              </p>
+              <div class="project-tags">
+                <h6 class="tag">Python</h6>
+              </div>
+            </div>
+            <img
+              src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/000/590/516/datas/original.gif"
+              class="project-photo"
+              alt="cube gif"
+            />
+          </div>
         </div>
-        <br />
       </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <ul class="timeline">
-            <li class="timeline-inverted">
-              <div class="timeline-image">
-                <img
-                  class="rounded-circle img-fluid"
-                  src="../img/infosys.png"
-                  alt="Infosy Icon"
-                />
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h3>June, 2021 - July, 2022</h3>
-                  <h4 class="subheading">Full Time Job at Infosys</h4>
-                  <h5 class="subheading" style="font-size: 75%">
-                    Title: Software Engineer
-                  </h5>
-                </div>
-                <div class="timeline-body">
-                  <p class="text-muted">
-                    Worked on to provide network security to the client.
-                    Moreover, worked on cisco FMC, VPN implementation, VPN
-                    tunnel migration IKEv1 to IKEv2, checkpoint firewall,
-                    setting policies on palalto and FortiGate firewall
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="timeline-image">
-                <img
-                  class="rounded-circle img-fluid"
-                  src="../img/mindbowser.jpeg"
-                  alt="mindbowser Icon"
-                />
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>June, 2020 - June, 2021</h4>
-                  <h4 class="subheading">
-                    Full Time Job at Mindbowser nfo Solutions Pvt. Ltd. Pune,
-                    India
-                  </h4>
-                  <h4 class="subheading" style="font-size: 75%">
-                    Title: Software Developer
-                  </h4>
-                </div>
-                <div class="timeline-body">
-                  <p class="text-muted">
-                    Worked with the team, designed a solution to customer.
-                    Worked on machine learning algorithms, Design and develop
-                    classification, regression model for client.
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li class="timeline-inverted">
-              <div class="timeline-image">
-                <h4>Be Part <br />Of My <br />Story!</h4>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
+  </body>
 </html>
