@@ -1,0 +1,25 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  .footercontainer {
+    text-align: center;
+    padding-top: 10px;
+  }
+  .contactBackground {
+  background-color: var(--black);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  }
+  .contactBtn{
+    background-color: var(--black);
+    color: var(--white);
+  }
+  .contactBtn:hover{
+    background-color: var(--green);
+    color: var(--white);
+  }
+  .form-group{
+  padding-top: 10px;
+  }
