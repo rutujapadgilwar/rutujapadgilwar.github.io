@@ -1,0 +1,22 @@
+.reumeClass {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.resumeIframe {
+  width: 100%;
+  height: 900px;
+}
+.resumeHeading {
+  text-align: center;
+  color: var(--teal);
+  font-size: 200%;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media (max-width: 768px) {
+  .resumeIframe {
+    width: 100%;
+    height: 480px;
+  }
+}
