@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="../css/workTimeline.css" />
     <link rel="stylesheet" href="../css/projects.css" />
     <link rel="stylesheet" href="../css/contact.css" />
-    <script src="../js/contact.js"></script>
+    <script defer src="../js/contact.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   </head>
   <body>
@@ -294,15 +294,13 @@
           </div>
         </div>
         <div class="resumeButton">
-          <a
-            href="resume.html"
-            class="vieMyResumeButton"
-            target="_blank"
+          <a href="resume.html" class="vieMyResumeButton" target="_blank"
             >VIEW MY RESUME</a
           >
         </div>
       </div>
     </section>
+    <!-- Contact Section -->
     <section id="contact">
       <div class="contactBackground">
         <div class="d-flex align-items-center justify-content-center">
@@ -320,7 +318,6 @@
                   id="name"
                   placeholder="your name"
                   autocomplete="name"
-                  required
                 />
               </div>
             </div>
@@ -333,7 +330,6 @@
                   id="email"
                   placeholder="example@email.com"
                   autocomplete="email"
-                  required
                 />
               </div>
             </div>
@@ -353,7 +349,13 @@
             <div class="form-group row">
               <div class="d-flex justify-content-center">
                 <div class="col-sm-3">
-                  <button type="submit" class="contactBtn" onclick="handleSubmit(event)">Submit</button>
+                  <button
+                    type="submit"
+                    class="contactBtn"
+                    onclick="submitForm()"
+                  >
+                    Submit
+                  </button>
                 </div>
               </div>
             </div>

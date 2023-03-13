@@ -1,16 +1,20 @@
-let form = document.querySelector("#form");
-
-form.addEventListener("submit", handleSubmit);
-
-function handleSubmit(event) {
-  if (form.name.value.length > 0 && form.email.value.length > 0) {
-    console.log("========= Form Submission =========");
-    console.log("Name: " + form.name.value);
-    console.log("Email: " + form.email.value);
-    console.log("Message: " + form.message.value);
-    event.preventDefault();
+function submitForm() {
+  const formatName = /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~0123456789]/;
+  const formatEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+  let message = document.getElementById("feedback").value;
+  
+  if ((name.length === 0) & (email.length === 0) & (message.length === 0)) {
+    alert("Please fill all the fields to submit the form");
+  } else if (name === "" || name.match(formatName)) {
+    console.log("Invalid Name");
+    alert("Please enter a valid Name");
+  } else if (email === "" || !email.match(formatEmail)) {
+    console.log("Invalid Email");
+    alert("Please enter a valid Email");
   } else {
-    console.warn("You must enter name and email to submit this form");
-    alert("Please enter a name and email to submit!");
+    alert("Your response submitted successfully");
+    document.getElementById("form").reset();
   }
 }
