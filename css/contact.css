@@ -1,25 +1,53 @@
 .contact {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-  }
-  .footercontainer {
-    text-align: center;
-    padding-top: 10px;
-  }
-  .contactBackground {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.footercontainer {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.contactBackground {
   background-color: var(--black);
   padding-top: 40px;
   padding-bottom: 40px;
-  }
-  .contactBtn{
-    background-color: var(--black);
-    color: var(--white);
-  }
-  .contactBtn:hover{
-    background-color: var(--green);
-    color: var(--white);
-  }
-  .form-group{
+}
+.contactBtn {
+  background-color: var(--black);
+  color: var(--white);
+}
+.contactBtn:hover {
+  background-color: var(--green);
+  color: var(--white);
+}
+.form-group {
   padding-top: 10px;
-  }
+}
+ul.social-buttons {
+  margin-bottom: 0;
+}
+ul.social-buttons li a {
+  font-size: 20px;
+  line-height: 50px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  color: white;
+  border-radius: 100%;
+  outline: none;
+  background-color: var(--gray1);
+}
+ul.social-buttons li a:active,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:hover {
+  background-color: var(--black);
+}
+span.copyright {
+  font-size: 90%;
+  line-height: 40px;
+  text-transform: none;
+}

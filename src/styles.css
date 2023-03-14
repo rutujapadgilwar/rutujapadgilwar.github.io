@@ -15,7 +15,7 @@
     --purple: #800080;
     --navy: #000080;
     --cyan: #17a2b8;
-    --violetred: #c71585;
+    --violetred: #e97ec1;
     --red: #ff0000;
     --orange: #ffa500;
     --green: #006400;
@@ -32,5 +32,5 @@
     font-size: 1.2em;
     color: var(--gray1);
     margin: 0;
-    min-width: 400px;
+    width: 100%;
   }

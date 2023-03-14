@@ -13,8 +13,11 @@ function submitForm() {
   } else if (email === "" || !email.match(formatEmail)) {
     console.log("Invalid Email");
     alert("Please enter a valid Email");
-  } else {
-    alert("Your response submitted successfully");
+  } else if (message.length < 15) {
+    alert("Please give us atleast one sentence of feedback")
+  } 
+  else {
+    alert("Thank you for your response!");
     document.getElementById("form").reset();
   }
 }

@@ -34,7 +34,7 @@
 }
 .intro-heading-h4 {
   color: var(--darkpurple);
-  font-size: 100%;
+  font-size: 80%;
   font-weight: bolder;
 }
 .intro-heading-para1 {
@@ -102,7 +102,7 @@
     animation-delay: calc(0.2s * var(--i));
   }
   .intro-heading-h4 {
-    color: var(--darkpurple);
+    color: var(--violetred);
     font-size: 100%;
     font-weight: bolder;
   }
