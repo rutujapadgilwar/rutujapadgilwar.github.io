@@ -2,28 +2,18 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding-top: 70px;
+  padding-top: 40px;
   background-color: var(--white);
 }
-.section-title {
-  padding-top: 30px;
-  padding-bottom: 10px;
-  text-align: center;
-  color: var(--teal);
-  font-size: 200%;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.project-card {
+.projectCard {
   flex: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 50px 30px;
-  padding: 50px 30px;
+  padding: 30px 30px;
 }
-.project-photo {
+.projectPhoto {
   width: 350px;
   height: 250px;
 }
@@ -39,8 +29,8 @@
   background-color: var(--black);
   border-radius: 20px;
 }
-.vieMyResumeButton:hover{
-  color:var(--orange);
+.vieMyResumeButton:hover {
+  color: var(--orange);
 }
 .resumeButton {
   display: flex;
@@ -49,14 +39,24 @@
   padding-top: 20px;
   padding-bottom: 100px;
 }
-.project-info {
-  margin-right: 24px;
+.projectInfo {
+  padding: 20px;
+  text-rendering: optimizeLegibility;
 }
-.project-title {
-  font-size: 20px;
+.projectPurpose{
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+.projectInfoPara{
+  font-size: 1.2rem;
+  padding: 20px;
+  text-rendering: optimizeLegibility;
+}
+.projectTitle {
+  font-size: 1.8rem;
   font-weight: 600;
 }
-.project-tags {
+.projectTags {
   display: flex;
   max-width: 60%;
   flex-wrap: wrap;
@@ -70,68 +70,61 @@
   margin-bottom: 4px;
   color: var(--white);
 }
-.project-links a {
+.projectLinks a {
   text-decoration: none;
   color: var(--black);
 }
-.link-button:hover{
+.linkButton:hover {
   color: var(--white);
   background-color: var(--orange);
 }
-.project-links {
+.projectLinks {
   margin-top: 6px;
   display: flex;
   padding-bottom: 10px;
 }
-.link-button {
+.linkButton {
   display: flex;
-  justify-content: center;
   align-items: center;
   background-color: var(--black);
   color: var(--white);
-  width: max-content;
   padding: 10px;
   border-radius: 4px;
-  font-size: 16px;
+  font-size: 1rem;
   margin-right: 6px;
 }
-.link-button i {
+.linkButton i {
   display: flex;
   align-items: center;
   mask-repeat: 4px;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 980px) {
   .projects {
     padding-top: 30px;
   }
-  .project-photo {
-    width: 90%;
-  }
-  .project-card {
+  .projectCard {
     flex-direction: column-reverse;
   }
-  .project-info {
+  .projectInfo {
     margin-left: 0px;
     margin-top: 10px;
   }
-  .project-tags {
+  .projectTags {
     max-width: 100%;
   }
-  .link-button:hover{
+  .linkButton:hover {
     color: var(--white);
     background-color: var(--orange);
   }
-  .vieMyResumeButton {
-    color: var(--white);
-    text-decoration: none;
-    font-weight: bold;
-    font-size: x-large;
-    align-items: center;
-    padding: 20px;
-    display: block;
-    text-align: center;
-    border: 0;
-    background-color: var(--black);
+  .projectPhoto {
+    width: 480px;
+    height: 300px;
+  }
+}
+@media (max-width: 520px) {
+  .projectPhoto {
+    width: 350px;
+    height: 250px;
   }
 }

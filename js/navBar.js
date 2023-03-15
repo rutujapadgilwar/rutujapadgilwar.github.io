@@ -1,5 +1,5 @@
 // Add menu button on navbar for mobile view
-const button = document.getElementById("toggle-button");
+const button = document.getElementById("toggleButton");
 const navBarId = document.getElementById("navBarId");
 
 button.addEventListener("click", () => {

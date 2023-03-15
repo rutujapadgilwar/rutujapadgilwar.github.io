@@ -1,16 +1,7 @@
 .workContainer {
-  padding-top: 70px;
+  padding-top: 20px;
   padding-bottom: 50px;
   background-color: var(--lightwhite);
-}
-.sectionWorkHeading {
-  padding-top: 30px;
-  padding-bottom: 20px;
-  text-align: center;
-  color: var(--teal);
-  font-size: 200%;
-  font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
 }
 .timeline {
   position: relative;
@@ -40,26 +31,26 @@
 .timeline > li:after {
   clear: both;
 }
-.timeline > li .timeline-panel {
+.timeline > li .timelinePanel {
   position: relative;
   float: right;
   width: 100%;
   padding: 0 20px 0 100px;
   text-align: left;
 }
-.timeline > li .timeline-panel:before {
+.timeline > li .timelinePanel:before {
   right: auto;
   left: -15px;
   border-right-width: 15px;
   border-left-width: 0;
 }
-.timeline > li .timeline-panel:after {
+.timeline > li .timelinePanel:after {
   right: auto;
   left: -14px;
   border-right-width: 14px;
   border-left-width: 0;
 }
-.timeline > li .timeline-image {
+.timeline > li .timelineImage {
   position: absolute;
   align-items: center;
   width: 80px;
@@ -71,23 +62,23 @@
   border: 7px solid var(--gray4);
   background-color: var(--teal);
 }
-.timeline > li .timeline-image h4 {
+.timeline > li .timelineImage h4 {
   font-size: 10px;
   line-height: 14px;
   margin-top: 12px;
 }
-.timeline > li.timeline-inverted > .timeline-panel {
+.timeline > li.timelineInverted > .timelinePanel {
   float: right;
   padding: 0 20px 0 100px;
   text-align: left;
 }
-.timeline > li.timeline-inverted > .timeline-panel:before {
+.timeline > li.timelineInverted > .timelinePanel:before {
   right: auto;
   left: -15px;
   border-right-width: 15px;
   border-left-width: 0;
 }
-.timeline > li.timeline-inverted > .timeline-panel:after {
+.timeline > li.timelineInverted > .timelinePanel:after {
   right: auto;
   left: -14px;
   border-right-width: 14px;
@@ -96,15 +87,17 @@
 .timeline > li:last-child {
   margin-bottom: 0;
 }
-.timeline .timeline-heading h4 {
+.timeline .timelineHeading h4 {
   margin-top: 0;
   color: inherit;
 }
-.timeline .timeline-heading h4.subheading {
+.timeline .timelineHeading h4.subheading {
   text-transform: none;
+  font-size: 1.5rem;
+  font-weight: 400;
 }
-.timeline .timeline-body > ul,
-.timeline .timeline-body > p {
+.timeline .timelineBody > ul,
+.timeline .timelineBody > p {
   margin-bottom: 0;
   color: var(--blue);
 }
@@ -117,71 +110,31 @@
     min-height: 100px;
     margin-bottom: 100px;
   }
-  .timeline > li .timeline-panel {
+  .timeline > li .timelinePanel {
     float: left;
     width: 41%;
     padding: 0 20px 20px 30px;
     text-align: right;
   }
-  .timeline > li .timeline-image {
+  .timeline > li .timelineImage {
     left: 50%;
     width: 100px;
     height: 100px;
     margin-left: -50px;
   }
-  .timeline > li .timeline-image h4 {
-    font-size: 13px;
+  .timeline > li .timelineImage h4 {
+    font-size: 20px;
     line-height: 18px;
     margin-top: 16px;
   }
-  .timeline > li.timeline-inverted > .timeline-panel {
+  .timeline > li.timelineInverted > .timelinePanel {
     float: right;
     padding: 0 30px 20px 20px;
     text-align: left;
   }
 }
-@media (min-width: 992px) {
-  .timeline > li {
-    min-height: 150px;
-  }
-  .timeline > li .timeline-panel {
-    padding: 0 20px 20px;
-  }
-  .timeline > li .timeline-image {
-    width: 150px;
-    height: 150px;
-    margin-left: -75px;
-  }
-  .timeline > li .timeline-image h4 {
-    font-size: 18px;
-    line-height: 26px;
-    margin-top: 30px;
-  }
-  .timeline > li.timeline-inverted > .timeline-panel {
-    padding: 0 20px 20px;
-  }
-}
 @media (max-width: 480px) {
   .workContainer {
-    padding-top: 140px;
-  }
-}
-@media (min-width: 1200px) {
-  .timeline > li {
-    min-height: 170px;
-  }
-  .timeline > li .timeline-panel {
-    padding: 0 20px 20px 100px;
-  }
-  .timeline > li .timeline-image {
-    width: 170px;
-    height: 170px;
-    margin-left: -85px;
-  }
-  .timeline > li .timeline-image h4 {
-    margin-top: 40px;
-  }
-  .timeline > li.timeline-inverted > .timeline-panel {
-    padding: 0 100px 20px 20px;
+    padding-top: 50px;
   }
 }

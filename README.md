@@ -1,5 +1,5 @@
-# Portfolio
-This is a fully responsive single page personal portfolio website, built using HTML, CSS,Bootstrap and JavaScript.
+# rutujapadgilwar.github.io
+This is a fully responsive single page personal portfolio website, built using HTML, CSS, Bootstrap and JavaScript.
 
 Website Demo: https://rutujapadgilwar.github.io/
 
@@ -13,6 +13,8 @@ Website contains:
 * Footer
 
 ## How to run the code
+Clone the repository by using: git clone https://github.com/rutujapadgilwar/rutujapadgilwar.github.io.git
+or you can download the repo and unzip it.
 You can use your browser to open the index.html file. All necessary Javascript and CSS files are already linked to HTML file, and all sections are linked through the navbar. I only checked the website for screen sizes at 414px, 768px, and 1024px.
 
 ### Technologies Used
