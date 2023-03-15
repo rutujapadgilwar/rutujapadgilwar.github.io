@@ -52,6 +52,7 @@
   color: var(--teal);
   font-size: 200%;
   font-weight: bold;
+  text-transform: uppercase;
   font-family: Arial, Helvetica, sans-serif;
 }
 .selfImage {
@@ -62,7 +63,7 @@
   width: 250px;
   height: 250px;
 }
-.vieMyWorkButton {
+.viewMyWorkButton {
   color: var(--white);
   text-decoration: none;
   font-weight: bold;
@@ -72,6 +73,10 @@
   height: 200px;
   text-align: center;
   background-color: var(--purple);
+}
+.viewMyWorkButton:hover {
+  color: var(--white);
+  background-color: var(--orange);
 }
 @keyframes flip {
   0%,
@@ -118,7 +123,7 @@
     padding-bottom: 5px;
     text-align: center;
     color: var(--teal);
-    font-size: 250%;
+    font-size: 200%;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
   }

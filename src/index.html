@@ -17,40 +17,45 @@
       rel="stylesheet"
       type="text/css"
     />
-    <title>project</title>
+    <title>Rutuja's Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="../css/navbar.css" />
     <link rel="stylesheet" href="../css/aboutMe.css" />
     <link rel="stylesheet" href="../css/workTimeline.css" />
     <link rel="stylesheet" href="../css/projects.css" />
     <link rel="stylesheet" href="../css/contact.css" />
+    <script defer src="../js/navBar.js"></script>
     <script defer src="../js/contact.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul class="navBarClass" id="navBarClass">
-          <li class="navItem">
-            <a class="navItemLink" href="index.html" aria-label="home icon">
-              <i class="fa fa-home" style="color: var(--white)"></i>
-            </a>
-          </li>
-          <li class="navItem">
-            <a href="#about" class="navItemLink"> About </a>
-          </li>
-          <li class="navItem">
-            <a href="#work" class="navItemLink">Work</a>
-          </li>
-          <li class="navItem">
-            <a href="#projects" class="navItemLink">Project</a>
-          </li>
-          <li class="navItem">
-            <a href="#contact" class="navItemLink">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <nav class="navBar">
+      <ul class="navBarClass" id="navBarId">
+        <li class="navItem">
+          <a class="navItemLink" href="index.html" aria-label="home icon">
+            <i class="fa fa-home" style="color: var(--white)"></i>
+          </a>
+        </li>
+        <li class="navItem">
+          <a href="#about" class="navItemLink"> About </a>
+        </li>
+        <li class="navItem">
+          <a href="#work" class="navItemLink">Work</a>
+        </li>
+        <li class="navItem">
+          <a href="#projects" class="navItemLink">Projects</a>
+        </li>
+        <li class="navItem">
+          <a href="#contact" class="navItemLink">Contact</a>
+        </li>
+      </ul>
+      <div class="menu" id="toggle-button">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+      </div>
+    </nav>
     <!-- About Me -->
     <section id="about">
       <div class="aboutContainer">
@@ -75,7 +80,7 @@
               <h4 class="intro-heading-h4">"Software Developer"</h4>
             </div>
             <br />
-            <a class="vieMyWorkButton" href="#projects">View my work -></a>
+            <a class="viewMyWorkButton" href="#projects">View my work -></a>
           </div>
         </div>
         <div>
@@ -189,10 +194,10 @@
                   </div></a
                 ><a
                   class="project-link"
-                  href="https://github.com/schoure98/image_gallery_fullstack
+                  href="https://github.com/rutujapadgilwar/image_gallery_fullstack
                 "
                   ><div class="link-button">
-                    <i class="fa fa-github"></i><span>Github</span>
+                    <i class="fab fa-github"></i><span>Github</span>
                   </div></a
                 >
               </div>
@@ -221,6 +226,42 @@
             <img
               src="../img/travelMemories.gif"
               alt="travel memory project"
+              class="project-photo"
+            />
+          </div>
+          <div class="project-card">
+            <div class="project-info">
+              <h4 class="project-title">
+                Book Recommendation System
+              </h4>
+              <div class="project-links">
+                <a class="project-link" href="https://github.com/rutujapadgilwar/FindYourNextBook"
+                  ><div class="link-button">
+                    <i class="fab fa-github"></i>Github
+                  </div></a
+                >
+              </div>
+              <h5>
+                The purpose of this project is to build a model which recommend
+                books to readers based on popularity parameters and
+                collaborative approach.
+              </h5>
+              <p>
+                It is website Web application to recommend books to readers with
+                5 different categories (i.e similar books choice, author,
+                publisher, place, year) Backend implementation through Python
+                and frontend development through Flask displaying categorical
+                books.
+              </p>
+              <div class="project-tags">
+                <h6 class="tag">Python</h6>
+                <h6 class="tag">Flask</h6>
+                <h6 class="tag">Html/Css</h6>
+              </div>
+            </div>
+            <img
+              src="../img/books.gif"
+              alt="books gif"
               class="project-photo"
             />
           </div>
@@ -274,7 +315,7 @@
                   href="https://github.com/rutujapadgilwar06/rubik-s-cube-solver
                 "
                   ><div class="link-button">
-                    <i class="fa fa-github"></i>Github
+                    <i class="fab fa-github"></i>Github
                   </div></a
                 >
               </div>
@@ -309,26 +350,29 @@
     <section id="contact">
       <div class="contactBackground">
         <div class="d-flex align-items-center justify-content-center">
-          <form class="d-inline-block p-4 bg-white h-80%" id="form">
+          <form
+            class="d-inline-block p-4 bg-white h-80% border border-dark"
+            id="form"
+          >
             <h1>Let's Connect!</h1>
             <br />
             <div class="form-group row">
-              <div class="col-sm-2 col-form-label">
+              <div class="col-sm-3 col-form-label">
                 <label for="name">Name:</label>
               </div>
-              <div class="col-sm-10">
+              <div class="col-sm-9">
                 <input
                   type="text"
                   class="form-control"
                   id="name"
-                  placeholder="your name"
+                  placeholder="Enter your full name"
                   autocomplete="name"
                 />
               </div>
             </div>
             <div class="form-group row">
-              <label for="email" class="col-sm-2 col-form-label">Email:</label>
-              <div class="col-sm-10">
+              <label for="email" class="col-sm-3 col-form-label">Email:</label>
+              <div class="col-sm-9">
                 <input
                   type="email"
                   class="form-control"
@@ -389,16 +433,12 @@
               </li>
               <li class="list-inline-item">
                 <a href="https://github.com/rpadgil2" aria-label="github link">
-                  <i
-                    class="fab fa-github"
-                  ></i>
+                  <i class="fab fa-github"></i>
                 </a>
               </li>
               <li class="list-inline-item">
                 <a href="mailto:rpadgil2@pdx.edu" aria-label="gmail link">
-                  <i
-                    class="fas fa-envelope-square"
-                  ></i>
+                  <i class="fas fa-envelope-square"></i>
                 </a>
               </li>
             </ul>

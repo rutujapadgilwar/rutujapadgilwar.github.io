@@ -9,13 +9,15 @@
   padding-bottom: 10px;
 }
 .contactBackground {
-  background-color: var(--black);
+  background-color: var(--lightwhite);
   padding-top: 40px;
   padding-bottom: 40px;
 }
 .contactBtn {
   background-color: var(--black);
   color: var(--white);
+  padding: 10px;
+  border-radius: 20px;
 }
 .contactBtn:hover {
   background-color: var(--green);
@@ -36,7 +38,7 @@ ul.social-buttons li a {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
-  color: white;
+  color: var(--white);
   border-radius: 100%;
   outline: none;
   background-color: var(--gray1);
