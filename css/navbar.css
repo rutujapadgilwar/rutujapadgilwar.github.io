@@ -45,7 +45,7 @@
   background-color: var(--orange);
   margin-bottom: 4px;
 }
-@media all and (max-width: 550px) {
+@media all and (max-width: 630px) {
   .navBar {
     background-color: var(--black);
     height: fit-content;

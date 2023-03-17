@@ -15,7 +15,7 @@
   --cyan: #17a2b8;
   --violetred: #e97ec1;
   --red: #ff0000;
-  --orange: #ffa500;
+  --orange: #faa810;
   --green: #006400;
   --yellow: #cdd73a;
   --purple1: #874feb;
@@ -33,13 +33,12 @@ body {
   font-family: "Raleway";
 }
 .sectionHeading {
-  padding-top: 25px;
+  padding-top: 45px;
   padding-bottom: 20px;
   text-align: center;
   color: var(--teal);
-  font-family: Raleway;
+  font-family: Raleway-extrabold;
   font-size: 3rem;
-  font-style: oblique;
   font-variant: small-caps;
   font-weight: 900;
   line-height: 26.4px;

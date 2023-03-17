@@ -39,10 +39,6 @@
   padding-top: 20px;
   padding-bottom: 100px;
 }
-.projectInfo {
-  padding: 20px;
-  text-rendering: optimizeLegibility;
-}
 .projectPurpose{
   font-size: 1.2rem;
   font-weight: bolder;
@@ -106,10 +102,6 @@
   .projectCard {
     flex-direction: column-reverse;
   }
-  .projectInfo {
-    margin-left: 0px;
-    margin-top: 10px;
-  }
   .projectTags {
     max-width: 100%;
   }
@@ -126,5 +118,9 @@
   .projectPhoto {
     width: 350px;
     height: 250px;
+  }
+  .projectTitle {
+    font-size: 1.5rem;
+    font-weight: 600;
   }
 }
