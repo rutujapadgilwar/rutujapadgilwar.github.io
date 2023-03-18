@@ -18,9 +18,10 @@
   color: var(--white);
   padding: 10px;
   border-radius: 20px;
+  box-shadow: 0 8px 16px 0 var(--lightgray), 0 6px 20px 0 var(--lightgray1);
 }
 .contactBtn:hover {
-  background-color: var(--green);
+  background-color: var(--orange);
   color: var(--white);
 }
 .form-group {
@@ -42,11 +43,12 @@ ul.social-buttons li a {
   border-radius: 100%;
   outline: none;
   background-color: var(--gray1);
+  box-shadow: 0 8px 16px 0 var(--lightgray), 0 6px 20px 0 var(--lightgray1);
 }
 ul.social-buttons li a:active,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:hover {
-  background-color: var(--black);
+  background-color: var(--orange);
 }
 span.copyright {
   font-size: 90%;

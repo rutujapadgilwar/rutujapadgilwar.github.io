@@ -24,6 +24,8 @@
   --purple3: #7a21d4;
   --lightsky: rgb(241, 248, 254);
   --lightwhite: #f8f9fa;
+  --lightgray:rgba(0,0,0,0.2);
+  --lightgray1: rgba(0,0,0,0.19);
 }
 body {
   font-size: 1.2em;
