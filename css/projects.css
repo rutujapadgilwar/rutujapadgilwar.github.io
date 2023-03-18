@@ -29,8 +29,9 @@
   background-color: var(--black);
   border-radius: 20px;
 }
-.vieMyResumeButton:hover {
-  color: var(--orange);
+.vieMyResumeButton:hover{
+  background-color: var(--orange);
+  color: var(--white);
 }
 .resumeButton {
   display: flex;
