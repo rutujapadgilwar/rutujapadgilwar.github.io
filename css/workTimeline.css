@@ -54,13 +54,13 @@
   position: absolute;
   align-items: center;
   width: 80px;
-  height: 80px;
+  height: 79px;
   margin-left: 45;
   text-align: center;
-  color: var(--white);
+  color: var(--teal);
   border-radius: 100%;
   border: 7px solid var(--gray3);
-  background-color: var(--teal);
+  background-color: var(--white);
 }
 .timeline > li .timelineImage h4 {
   font-size: 10px;
@@ -120,14 +120,16 @@
   .timeline > li .timelinePanel {
     float: left;
     width: 41%;
-    padding: 0 20px 20px 30px;
+    padding: 0 20px 20px 20px;
     text-align: right;
   }
   .timeline > li .timelineImage {
     left: 50%;
     width: 100px;
-    height: 100px;
+    height: 98px;
     margin-left: -50px;
+    justify-content: center;
+    align-items: center;
   }
   .timeline > li .timelineImage h4 {
     font-size: 20px;
