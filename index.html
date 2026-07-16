@@ -7,14 +7,22 @@
 <meta name="description" content="Rutuja Padgilwar — Software Engineer specializing in backend systems, AWS, and GenAI/LLM applications. Python, FastAPI, React, RAG pipelines.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#0b0f1a; --bg2:#0f1526; --card:#131b30; --card2:#182238;
-  --text:#e8ecf6; --muted:#93a0bc; --line:rgba(147,160,188,.14);
-  --accent:#6c8cff; --accent2:#38d9c3; --grad:linear-gradient(100deg,#6c8cff,#38d9c3);
+  --bg:#0a0812; --bg2:#110d1f; --card:#151024; --card2:#1c1530;
+  --text:#ede9fa; --muted:#9d94b8; --line:rgba(157,148,184,.15);
+  --accent:#a78bfa; --accent2:#f472b6; --grad:linear-gradient(100deg,#8b5cf6,#d946ef,#f472b6);
+  --navbg:rgba(10,8,18,.82); --shadow:0 20px 44px -18px #000c;
   --radius:18px;
 }
+html[data-theme="light"]{
+  --bg:#faf9fd; --bg2:#ffffff; --card:#ffffff; --card2:#f4f1fb;
+  --text:#211a38; --muted:#5f5878; --line:rgba(33,26,56,.12);
+  --accent:#7c3aed; --accent2:#db2777; --grad:linear-gradient(100deg,#7c3aed,#c026d3,#db2777);
+  --navbg:rgba(250,249,253,.85); --shadow:0 20px 44px -20px #7c3aed33;
+}
+html[data-theme="light"] .glow::before,html[data-theme="light"] .glow::after{opacity:.10}
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;line-height:1.65;overflow-x:hidden}
@@ -27,12 +35,15 @@ img{max-width:100%;display:block}
 /* background glow */
 .glow{position:fixed;inset:0;z-index:-1;pointer-events:none}
 .glow::before,.glow::after{content:"";position:absolute;width:520px;height:520px;border-radius:50%;filter:blur(140px);opacity:.16}
-.glow::before{background:#6c8cff;top:-160px;left:-120px}
-.glow::after{background:#38d9c3;bottom:-200px;right:-140px}
+.glow::before{background:#8b5cf6;top:-160px;left:-120px}
+.glow::after{background:#f472b6;bottom:-200px;right:-140px}
 
 /* nav */
 nav{position:fixed;top:0;left:0;right:0;z-index:50;transition:.3s;padding:18px 0}
-nav.scrolled{background:rgba(11,15,26,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);padding:12px 0}
+nav.scrolled{background:var(--navbg);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);padding:12px 0}
+.nav-right{display:flex;align-items:center;gap:14px}
+.theme-btn{width:40px;height:40px;border-radius:12px;border:1px solid var(--line);background:none;color:var(--text);cursor:pointer;font-size:1.05rem;display:grid;place-items:center;transition:.25s}
+.theme-btn:hover{border-color:var(--accent);transform:translateY(-2px)}
 .nav-inner{display:flex;align-items:center;justify-content:space-between}
 .logo{font-family:'Sora',sans-serif;font-weight:800;font-size:1.15rem}
 .logo span{background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
@@ -45,7 +56,7 @@ nav.scrolled{background:rgba(11,15,26,.82);backdrop-filter:blur(14px);border-bot
 /* hero */
 .hero{min-height:100vh;display:flex;align-items:center;padding:120px 0 60px}
 .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center}
-.kicker{color:var(--accent2);font-weight:600;letter-spacing:.18em;text-transform:uppercase;font-size:.8rem;margin-bottom:14px}
+.kicker{color:var(--accent2);font-family:'JetBrains Mono',monospace;font-weight:600;letter-spacing:.18em;text-transform:uppercase;font-size:.78rem;margin-bottom:14px}
 .hero h1{font-size:clamp(2.4rem,5.5vw,4rem);font-weight:800;margin-bottom:14px}
 .hero h1 span{background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
 .type-line{font-size:clamp(1.1rem,2.4vw,1.5rem);color:var(--muted);min-height:2.2em;font-family:'Sora',sans-serif;font-weight:600}
@@ -54,8 +65,8 @@ nav.scrolled{background:rgba(11,15,26,.82);backdrop-filter:blur(14px);border-bot
 .hero p.lead{margin:18px 0 30px;color:var(--muted);max-width:560px}
 .btns{display:flex;gap:14px;flex-wrap:wrap}
 .btn{padding:13px 26px;border-radius:12px;font-weight:600;font-size:.95rem;transition:.25s;display:inline-flex;align-items:center;gap:8px}
-.btn-primary{background:var(--grad);color:#0b0f1a}
-.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 30px -8px #6c8cff88}
+.btn-primary{background:var(--grad);color:#fff}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 30px -8px #a78bfa99}
 .btn-ghost{border:1px solid var(--line);color:var(--text)}
 .btn-ghost:hover{border-color:var(--accent);transform:translateY(-2px)}
 .hero-img{position:relative;justify-self:center}
@@ -64,6 +75,7 @@ nav.scrolled{background:rgba(11,15,26,.82);backdrop-filter:blur(14px);border-bot
 .hero-img img{position:relative;width:300px;height:300px;object-fit:cover;border-radius:50%;border:6px solid var(--bg)}
 .socials{display:flex;gap:14px;margin-top:26px}
 .socials a{width:42px;height:42px;border:1px solid var(--line);border-radius:12px;display:grid;place-items:center;color:var(--muted);transition:.25s;font-size:1.05rem}
+.socials a svg{width:18px;height:18px;fill:currentColor}
 .socials a:hover{color:var(--text);border-color:var(--accent);transform:translateY(-3px)}
 
 /* sections */
@@ -98,12 +110,12 @@ section{padding:90px 0}
 .titem li{color:var(--muted);font-size:.95rem;padding-left:18px;position:relative;margin-bottom:7px}
 .titem li::before{content:"▹";position:absolute;left:0;color:var(--accent)}
 .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
-.tag{font-size:.75rem;font-weight:600;color:var(--accent2);background:#38d9c31a;border:1px solid #38d9c333;border-radius:999px;padding:4px 12px}
+.tag{font-size:.72rem;font-family:'JetBrains Mono',monospace;font-weight:600;color:var(--accent);background:#a78bfa14;border:1px solid #a78bfa33;border-radius:999px;padding:4px 12px}
 
 /* projects */
 .pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:24px}
 .pcard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;transition:.3s}
-.pcard:hover{transform:translateY(-6px);border-color:var(--accent);box-shadow:0 20px 44px -18px #000c}
+.pcard:hover{transform:translateY(-6px);border-color:var(--accent);box-shadow:var(--shadow)}
 .pcard .thumb{height:180px;overflow:hidden;background:var(--card2)}
 .pcard .thumb img{width:100%;height:100%;object-fit:cover;transition:.45s}
 .pcard:hover .thumb img{transform:scale(1.06)}
@@ -111,9 +123,13 @@ section{padding:90px 0}
 .pcard h3{font-size:1.08rem;margin-bottom:8px}
 .pcard p{color:var(--muted);font-size:.9rem;flex:1}
 .pcard .tags{margin:14px 0}
-.plinks{display:flex;gap:16px;font-size:.88rem;font-weight:600}
-.plinks a{color:var(--accent);transition:.2s}
-.plinks a:hover{color:var(--accent2)}
+.plinks{display:flex;gap:10px;font-size:.85rem;font-weight:600}
+.plinks a{display:inline-flex;align-items:center;gap:7px;padding:8px 16px;border-radius:10px;transition:.25s}
+.plinks a svg{width:15px;height:15px;fill:currentColor}
+.plinks .demo{background:var(--grad);color:#fff}
+.plinks .demo:hover{transform:translateY(-2px);box-shadow:0 8px 20px -6px #a78bfa99}
+.plinks .code{border:1px solid var(--line);color:var(--text)}
+.plinks .code:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
 
 /* skills */
 .sgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:20px}
@@ -133,7 +149,7 @@ footer{border-top:1px solid var(--line);padding:28px 0;text-align:center;color:v
 footer a{color:var(--accent)}
 
 /* to-top */
-#toTop{position:fixed;right:22px;bottom:22px;width:46px;height:46px;border-radius:12px;background:var(--grad);color:#0b0f1a;border:0;font-size:1.2rem;cursor:pointer;opacity:0;pointer-events:none;transition:.3s;z-index:40}
+#toTop{position:fixed;right:22px;bottom:22px;width:46px;height:46px;border-radius:12px;background:var(--grad);color:#fff;border:0;font-size:1.2rem;cursor:pointer;opacity:0;pointer-events:none;transition:.3s;z-index:40}
 #toTop.show{opacity:1;pointer-events:auto}
 
 @media(max-width:840px){
@@ -153,13 +169,16 @@ footer a{color:var(--accent)}
 <nav id="nav">
   <div class="wrap nav-inner">
     <a class="logo" href="#top">Rutuja<span>.dev</span></a>
-    <button class="burger" id="burger" aria-label="menu">☰</button>
     <div class="links" id="links">
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
+    </div>
+    <div class="nav-right">
+      <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">🌙</button>
+      <button class="burger" id="burger" aria-label="menu">☰</button>
     </div>
   </div>
 </nav>
@@ -170,16 +189,16 @@ footer a{color:var(--accent)}
       <div class="kicker">Hello, I'm</div>
       <h1>Rutuja <span>Padgilwar</span></h1>
       <div class="type-line"><span id="typed"></span><span class="caret"></span></div>
-      <p class="lead">I build scalable backend systems and production AI/LLM applications — from agentic RAG pipelines over SEC filings to healthcare platforms serving 100,000+ patients.</p>
+      <p class="lead">I build scalable backend systems and production AI/LLM applications — currently 7 LangGraph-orchestrated agents analyzing 10,000+ companies daily; previously healthcare platforms serving 100,000+ patients.</p>
       <div class="btns">
         <a class="btn btn-primary" href="#projects">View My Work →</a>
         <a class="btn btn-ghost" href="mailto:rutuja.padgilwar@gmail.com">Get In Touch</a>
       </div>
       <div class="socials">
-        <a href="https://www.linkedin.com/in/rutuja-padgilwar/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
-        <a href="https://github.com/rutujapadgilwar" target="_blank" rel="noopener" aria-label="GitHub">gh</a>
-        <a href="https://leetcode.com/u/rutuja0609/" target="_blank" rel="noopener" aria-label="LeetCode">lc</a>
-        <a href="mailto:rutuja.padgilwar@gmail.com" aria-label="Email">✉</a>
+        <a href="https://www.linkedin.com/in/rutuja-padgilwar/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0z"/></svg></a>
+        <a href="https://github.com/rutujapadgilwar" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.55v-2.17c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.66.41.35.77 1.04.77 2.1v3.11c0 .3.21.66.8.55A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg></a>
+        <a href="https://leetcode.com/u/rutuja0609/" target="_blank" rel="noopener" aria-label="LeetCode"><svg viewBox="0 0 24 24"><path d="M8.7 15.9 4.8 12l3.9-3.9-1.4-1.4L2 12l5.3 5.3 1.4-1.4zm6.6 0 3.9-3.9-3.9-3.9 1.4-1.4L22 12l-5.3 5.3-1.4-1.4z"/></svg></a>
+        <a href="mailto:rutuja.padgilwar@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg></a>
       </div>
     </div>
     <div class="hero-img"><img src="img/rutuja_self.png" alt="Rutuja Padgilwar"></div>
@@ -192,14 +211,14 @@ footer a{color:var(--accent)}
     <div class="about-grid">
       <div class="reveal">
         <p>I'm a software engineer with <b>5+ years of experience</b> across backend development, cloud infrastructure, and applied AI. Currently a Forward Deployed Engineer at <b>BrokerHQ AI</b>, I work directly with users to turn ambiguous business problems into production software.</p>
-        <p>My recent work centers on <b>GenAI systems that hold up in production</b> — agentic LLM workflows, RAG pipelines with measured accuracy, and the APIs and infrastructure underneath them. Before that, I built healthcare applications for CVS Pharmacy patients and enterprise microservices at Infosys.</p>
+        <p>My recent work centers on <b>GenAI systems that hold up in production</b> — LangGraph-orchestrated agents, RAG pipelines with source grounding and confidence thresholds, Redis caching strategies that cut LLM costs 70%, and the APIs and infrastructure underneath. Before that, I built healthcare applications for CVS Pharmacy patients and enterprise microservices at Infosys.</p>
         <p>I hold an M.S. in Computer Science from Portland State University (GPA 3.8) and love owning features from architecture through deployment and monitoring.</p>
       </div>
       <div class="stats reveal">
         <div class="stat"><b>5+</b><small>Years of Experience</small></div>
-        <div class="stat"><b>100K+</b><small>Patients Served by My Code</small></div>
-        <div class="stat"><b>87%</b><small>RAG Answer Accuracy</small></div>
-        <div class="stat"><b>15+</b><small>Projects Built</small></div>
+        <div class="stat"><b>10K+</b><small>Companies Analyzed Daily by My AI Agents</small></div>
+        <div class="stat"><b>70%</b><small>LLM Cost Reduction via Caching</small></div>
+        <div class="stat"><b>100x</b><small>Page Speedup (4s → 30ms)</small></div>
       </div>
     </div>
   </div>
@@ -214,23 +233,24 @@ footer a{color:var(--accent)}
         <h3>Forward Deployed Engineer · BrokerHQ AI</h3>
         <div class="where">Remote, USA</div>
         <ul>
-          <li>Architected an AI-powered broker copilot — Python/FastAPI backend, React frontend — centralizing company intelligence for instant deal insights.</li>
-          <li>Built agentic LLM workflows (GPT-4o, Gemini) with RAG pipelines over SEC filings, cutting manual broker research from hours to minutes.</li>
-          <li>Shipped predictive lead-generation models forecasting tenant relocations 8–12 months ahead.</li>
-          <li>Scaled AWS infrastructure (EC2, RDS, S3, Lambda) with Docker + GitHub Actions CI/CD.</li>
+          <li>Architected an AI-powered broker copilot — Python/FastAPI backend, React frontend — centralizing SEC insights, news, financials, and hiring signals for commercial real estate brokers.</li>
+          <li>Built 7 LangGraph-orchestrated AI agents analyzing 10,000+ companies daily — work that previously took brokers a full day per company.</li>
+          <li>Designed RAG pipelines over SEC filings with source-grounded responses and confidence-based retry loops, cutting research from hours to minutes.</li>
+          <li>Cut LLM costs ~70% via prompt decomposition, Redis caching (60–65% hit rate), and model routing; reduced key page loads from 4s to ~30ms (100x) at 100K+ requests/day.</li>
+          <li>Shipped predictive lead-gen models forecasting tenant relocations 8–12 months ahead; scaled on AWS with Docker + GitHub Actions CI/CD.</li>
         </ul>
-        <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">LangChain</span><span class="tag">RAG</span><span class="tag">AWS</span><span class="tag">React</span></div>
+        <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">LangGraph</span><span class="tag">RAG</span><span class="tag">Redis</span><span class="tag">AWS</span><span class="tag">React</span></div>
       </div>
       <div class="titem reveal">
         <div class="when">May 2024 — May 2025</div>
         <h3>Software Engineer · Global Tech Teams (Client: CVS Pharmacy)</h3>
         <div class="where">Bellevue, WA, USA</div>
         <ul>
-          <li>Led backend engineering for healthcare apps serving 100,000+ patients — Java (Spring Boot) and Node.js APIs with React/TypeScript frontends; cut processing time 30%.</li>
-          <li>Integrated AWS (Redshift, Lambda, S3, ECS, Kafka) for event-driven, serverless data pipelines — 30% lower latency.</li>
+          <li>Led backend engineering for a patient dashboard serving 100,000+ patients — Python/FastAPI microservices, GraphQL experience layer, React/TypeScript UI — cutting data retrieval time 30%.</li>
+          <li>Built a real-time Kafka notification system for medication schedules (hourly → 5-min cycles, −40% manual tracking) and batched category APIs for ~56% faster responses.</li>
           <li>Built AI-powered prescription recommendation models (Python, SQL, LLMs) and automated QA achieving 95% pre-production bug detection.</li>
         </ul>
-        <div class="tags"><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">Node.js</span><span class="tag">AWS</span><span class="tag">Kafka</span><span class="tag">LLMs</span></div>
+        <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">GraphQL</span><span class="tag">Kafka</span><span class="tag">React</span><span class="tag">AWS</span></div>
       </div>
       <div class="titem reveal">
         <div class="when">Jun 2021 — Jul 2022</div>
@@ -266,7 +286,7 @@ footer a{color:var(--accent)}
           <h3>PSU HelpBot — RAG Q&A System</h3>
           <p>Question-answering system for PSU graduate programs using LangChain + OpenAI LLMs. RAG pipeline with similarity search and MMR, evaluated with BERTScore and RAGAS — 87% answer accuracy.</p>
           <div class="tags"><span class="tag">LangChain</span><span class="tag">RAG</span><span class="tag">OpenAI</span><span class="tag">Streamlit</span></div>
-          <div class="plinks"><a href="https://psu-buddy-dpmmaekkruxdlracwvfjfn.streamlit.app/" target="_blank" rel="noopener">Live Demo ↗</a><a href="https://github.com/rutujapadgilwar/PSU-HelpBot-with-Langchain-Integration" target="_blank" rel="noopener">GitHub ↗</a></div>
+          <div class="plinks"><a href="https://psu-buddy-dpmmaekkruxdlracwvfjfn.streamlit.app/" target="_blank" rel="noopener" class="demo"><svg viewBox="0 0 24 24"><path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3zM5 5h6v2H7v10h10v-4h2v6H5V5z"/></svg>Live Demo</a><a href="https://github.com/rutujapadgilwar/PSU-HelpBot-with-Langchain-Integration" target="_blank" rel="noopener" class="code"><svg viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.55v-2.17c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.66.41.35.77 1.04.77 2.1v3.11c0 .3.21.66.8.55A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>GitHub</a></div>
         </div>
       </div>
       <div class="pcard reveal">
@@ -275,7 +295,7 @@ footer a{color:var(--accent)}
           <h3>Consumer Complaint NLP Classifier</h3>
           <p>NLP system classifying 625K+ CFPB consumer complaints into five product classes — 84% accuracy with XGBoost, plus BERT/GPT-2 transfer-learning baselines and a Flask UI.</p>
           <div class="tags"><span class="tag">NLP</span><span class="tag">BERT</span><span class="tag">XGBoost</span><span class="tag">Flask</span></div>
-          <div class="plinks"><a href="https://github.com/rutujapadgilwar/Consumer-Complaint-Content-Classification-NLP" target="_blank" rel="noopener">GitHub ↗</a></div>
+          <div class="plinks"><a href="https://github.com/rutujapadgilwar/Consumer-Complaint-Content-Classification-NLP" target="_blank" rel="noopener" class="code"><svg viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.55v-2.17c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.66.41.35.77 1.04.77 2.1v3.11c0 .3.21.66.8.55A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>GitHub</a></div>
         </div>
       </div>
       <div class="pcard reveal">
@@ -284,7 +304,7 @@ footer a{color:var(--accent)}
           <h3>National Park Chatbot & Voice Assistant</h3>
           <p>Conversational AI over the National Park Service and OpenWeather APIs — Dialogflow ES voice/chat, Flask webhook backend, deployed on Render with real-time alerts, activities, and weather.</p>
           <div class="tags"><span class="tag">Dialogflow</span><span class="tag">Flask</span><span class="tag">REST APIs</span></div>
-          <div class="plinks"><a href="https://national-park-chatbot.netlify.app" target="_blank" rel="noopener">Live Demo ↗</a><a href="https://github.com/rutujapadgilwar/National-Park-Chatbot" target="_blank" rel="noopener">GitHub ↗</a></div>
+          <div class="plinks"><a href="https://national-park-chatbot.netlify.app" target="_blank" rel="noopener" class="demo"><svg viewBox="0 0 24 24"><path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3zM5 5h6v2H7v10h10v-4h2v6H5V5z"/></svg>Live Demo</a><a href="https://github.com/rutujapadgilwar/National-Park-Chatbot" target="_blank" rel="noopener" class="code"><svg viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.55v-2.17c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.66.41.35.77 1.04.77 2.1v3.11c0 .3.21.66.8.55A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>GitHub</a></div>
         </div>
       </div>
       <div class="pcard reveal">
@@ -293,7 +313,7 @@ footer a{color:var(--accent)}
           <h3>National Park Dashboard</h3>
           <p>Interactive React dashboard for 55+ U.S. national parks — 5-day forecast line charts, state comparisons, 3D alert pie charts, and Google Maps integration with Redux state management.</p>
           <div class="tags"><span class="tag">React</span><span class="tag">D3.js</span><span class="tag">Chart.js</span><span class="tag">Redux</span></div>
-          <div class="plinks"><a href="https://parks-dashboard.netlify.app/" target="_blank" rel="noopener">Live Demo ↗</a><a href="https://github.com/rutujapadgilwar/Park-Dashboard" target="_blank" rel="noopener">GitHub ↗</a></div>
+          <div class="plinks"><a href="https://parks-dashboard.netlify.app/" target="_blank" rel="noopener" class="demo"><svg viewBox="0 0 24 24"><path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3zM5 5h6v2H7v10h10v-4h2v6H5V5z"/></svg>Live Demo</a><a href="https://github.com/rutujapadgilwar/Park-Dashboard" target="_blank" rel="noopener" class="code"><svg viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.55v-2.17c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.66.41.35.77 1.04.77 2.1v3.11c0 .3.21.66.8.55A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>GitHub</a></div>
         </div>
       </div>
       <div class="pcard reveal">
@@ -302,7 +322,7 @@ footer a{color:var(--accent)}
           <h3>ASL/ISL Sign Language Platform</h3>
           <p>CNN models (TensorFlow, OpenCV) translating sign language to text in real time with 60%+ cross-dataset accuracy, plus a React + Firebase site for collecting a 50-category video dataset.</p>
           <div class="tags"><span class="tag">TensorFlow</span><span class="tag">OpenCV</span><span class="tag">React</span><span class="tag">Firebase</span></div>
-          <div class="plinks"><a href="https://asl-dataset.web.app" target="_blank" rel="noopener">Live Demo ↗</a></div>
+          <div class="plinks"><a href="https://asl-dataset.web.app" target="_blank" rel="noopener" class="demo"><svg viewBox="0 0 24 24"><path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3zM5 5h6v2H7v10h10v-4h2v6H5V5z"/></svg>Live Demo</a></div>
         </div>
       </div>
       <div class="pcard reveal">
@@ -311,7 +331,7 @@ footer a{color:var(--accent)}
           <h3>Book Recommendation System</h3>
           <p>Collaborative-filtering recommendation engine suggesting books across five categories — similar titles, authors, publishers, places, and years — with a Flask front end.</p>
           <div class="tags"><span class="tag">Python</span><span class="tag">Flask</span><span class="tag">Collaborative Filtering</span></div>
-          <div class="plinks"><a href="http://findyournextbook.pythonanywhere.com/" target="_blank" rel="noopener">Live Demo ↗</a><a href="https://github.com/rutujapadgilwar/FindYourNextBook" target="_blank" rel="noopener">GitHub ↗</a></div>
+          <div class="plinks"><a href="http://findyournextbook.pythonanywhere.com/" target="_blank" rel="noopener" class="demo"><svg viewBox="0 0 24 24"><path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3zM5 5h6v2H7v10h10v-4h2v6H5V5z"/></svg>Live Demo</a><a href="https://github.com/rutujapadgilwar/FindYourNextBook" target="_blank" rel="noopener" class="code"><svg viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.55v-2.17c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.66.41.35.77 1.04.77 2.1v3.11c0 .3.21.66.8.55A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>GitHub</a></div>
         </div>
       </div>
     </div>
@@ -354,6 +374,18 @@ footer a{color:var(--accent)}
 <button id="toTop" aria-label="Back to top">↑</button>
 
 <script>
+// theme: saved preference > OS preference > dark
+const themeBtn = document.getElementById('themeBtn');
+function setTheme(t){
+  document.documentElement.dataset.theme = t;
+  themeBtn.textContent = t === 'light' ? '☀️' : '🌙';
+  try { localStorage.setItem('theme', t); } catch(e){}
+}
+let saved = null;
+try { saved = localStorage.getItem('theme'); } catch(e){}
+setTheme(saved || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'));
+themeBtn.onclick = () => setTheme(document.documentElement.dataset.theme === 'light' ? 'dark' : 'light');
+
 // year
 document.getElementById('year').textContent = new Date().getFullYear();
 
