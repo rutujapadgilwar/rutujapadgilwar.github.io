@@ -1,724 +1,405 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-    />
-    <link
-      href="../vendor/fontawesome-free/css/all.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Raleway"
-      rel="stylesheet"
-    />
-    <title>Rutuja's Portfolio</title>
-    <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="stylesheet" href="../css/navbar.css" />
-    <link rel="stylesheet" href="../css/aboutMe.css" />
-    <link rel="stylesheet" href="../css/workTimeline.css" />
-    <link rel="stylesheet" href="../css/projects.css" />
-    <link rel="stylesheet" href="../css/contact.css" />
-    <script defer src="../js/navBar.js"></script>
-    <script defer src="../js/contact.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  </head>
-  <body style="min-width: 300px">
-    <nav class="navBar">
-      <ul class="navBarClass" id="navBarId">
-        <li class="navItem">
-          <a class="navItemLink" href="index.html" aria-label="home icon">
-            <i class="fa fa-home" style="color: var(--white)"></i>
-          </a>
-        </li>
-        <li class="navItem">
-          <a href="#about" class="navItemLink"> About </a>
-        </li>
-        <li class="navItem">
-          <a href="#work" class="navItemLink">Work</a>
-        </li>
-        <li class="navItem">
-          <a href="#projects" class="navItemLink">Projects</a>
-        </li>
-        <li class="navItem">
-          <a href="#contact" class="navItemLink">Contact</a>
-        </li>
-      </ul>
-      <div class="menu" id="toggleButton">
-        <div class="menuLine"></div>
-        <div class="menuLine"></div>
-        <div class="menuLine"></div>
-        <div class="menuLine"></div>
-      </div>
-    </nav>
-    <!-- About Me -->
-    <section id="about">
-      <div class="aboutContainer">
-        <div class="masterhead">
-          <div class="introLine">
-            <img
-              src="../img/rutuja_self.png"
-              alt="intro_Image_Of_Me"
-              class="selfImage"
-            />
-            <div class="introHeading">
-              <span class="introHeadingSpan" style="--i: 1">H</span>
-              <span class="introHeadingSpan" style="--i: 2">E</span>
-              <span class="introHeadingSpan" style="--i: 3">L</span>
-              <span class="introHeadingSpan" style="--i: 4">L</span>
-              <span class="introHeadingSpan" style="--i: 5">O</span>
-              <span class="introHeadingSpan" style="--i: 6">, </span>
-              <span class="introHeadingSpan" style="--i: 7">I</span>
-              <span class="introHeadingSpan" style="--i: 8">'</span>
-              <span class="introHeadingSpan" style="--i: 9">M</span>
-              <span class="introHeadingName"> RUTUJA PADGILWAR! </span>
-              <h4 class="introHeadingH4">"Software Developer"</h4>
-            </div>
-            <br />
-            <a class="viewMyWorkButton" href="#projects">View my work -></a>
-          </div>
-        </div>
-        <div style="text-align: justify">
-          <h3 class="sectionHeading">About Me</h3>
-          <p class="introHeadingPara1">
-            &emsp;&emsp;Hi, I'm Rutuja Padgilwar! With a Master’s degree in
-            Computer Science from Portland State University and over 4 years of
-            experience in software development, I specialize in Python, Java,
-            ReactJS, and cloud technologies. My career has spanned roles from
-            building scalable eCommerce solutions to designing AI-driven
-            systems. I’ve developed a diverse skill set, from optimizing backend
-            systems to creating intuitive user interfaces. Passionate about AI
-            and machine learning, I’ve worked on projects involving LLMs and
-            advanced data retrieval systems. I'm excited to connect with others
-            in the tech community and explore new opportunities in software and
-            web development. Let’s connect if you’re interested in innovative
-            tech solutions or discussing exciting tech ideas!
-          </p>
-        </div>
-      </div>
-    </section>
-    <!--Work Timeline section-->
-    <section id="work">
-      <div class="workContainer">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h3 class="sectionHeading">Work Experience</h3>
-          </div>
-          <br />
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <ul class="timeline">
-              <li>
-                <div class="timelineImage">
-                  <img
-                    class="rounded-circle img-fluid"
-                    src="../img/Global Tech Teams.png"
-                    alt="Global Tech Teams Icon"
-                  />
-                </div>
-                <div class="timelinePanel">
-                  <div class="timelineHeading">
-                    <h4>July, 2023 - Current</h4>
-                    <h4 class="subheading">Global Tech Teams, USA</h4>
-                    <h5 class="subheadingH5">Title: Software Engineer</h5>
-                  </div>
-                  <div class="timelineBody">
-                    <p class="textMuted" style="text-align: justify">
-                      Develop user interfaces with React JS, ensuring responsive
-                      and user-friendly designs. Implement RESTful APIs using
-                      Java and Spring, focusing on efficiency and reliability.
-                      Create and execute unit and integration tests to maintain
-                      high code quality. Utilize Git for version control and
-                      manage CI/CD pipelines with Spinnaker. Follow Agile
-                      methodologies to adapt to evolving requirements and
-                      deliver improvements effectively.
-                    </p>
-                  </div>
-                </div>
-              </li>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rutuja Padgilwar — Software Engineer</title>
+<meta name="description" content="Rutuja Padgilwar — Software Engineer specializing in backend systems, AWS, and GenAI/LLM applications. Python, FastAPI, React, RAG pipelines.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0b0f1a; --bg2:#0f1526; --card:#131b30; --card2:#182238;
+  --text:#e8ecf6; --muted:#93a0bc; --line:rgba(147,160,188,.14);
+  --accent:#6c8cff; --accent2:#38d9c3; --grad:linear-gradient(100deg,#6c8cff,#38d9c3);
+  --radius:18px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;line-height:1.65;overflow-x:hidden}
+::selection{background:#6c8cff55}
+h1,h2,h3,h4{font-family:'Sora',sans-serif;line-height:1.2}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
 
-              <li class="timelineInverted">
-                <div class="timelineImage">
-                  <img
-                    class="rounded-circle img-fluid"
-                    src="../img/infosys.png"
-                    alt="Infosy Icon"
-                  />
-                </div>
-                <div class="timelinePanel">
-                  <div class="timelineHeading">
-                    <h4>June, 2021 - July, 2022</h4>
-                    <h4 class="subheading">Infosys, India</h4>
-                    <h5 class="subheadingH5">Title: Software Engineer</h5>
-                  </div>
-                  <div class="timelineBody">
-                    <p class="textMuted">
-                      Led the successful migration of an internal networking
-                      tool to a cloud-based web application, collaborating
-                      closely with cross-functional teams to ensure seamless
-                      integration. Designed and implemented a micro-service
-                      architecture using REST APIs, which reduced client
-                      configuration time by 5 hours daily. Conducted rigorous
-                      testing and validation to ensure robustness and
-                      reliability, contributing to a significant boost in system
-                      efficiency and automation.
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="timelineImage">
-                  <img
-                    class="rounded-circle img-fluid"
-                    src="../img/mindbowser.jpeg"
-                    alt="mindbowser Icon"
-                  />
-                </div>
-                <div class="timelinePanel">
-                  <div class="timelineHeading">
-                    <h4>June, 2019 - June, 2021</h4>
-                    <h4 class="subheading">
-                      Mindbowser Info Solutions Pvt. Ltd, India
-                    </h4>
-                    <h5 class="subheadingH5">Title: Software Developer</h5>
-                  </div>
-                  <div class="timelineBody">
-                    <p class="textMuted" style="text-align: justify">
-                      Designed solutions for clients, collaborating closely with
-                      a cross-functional team. Developed and implemented machine
-                      learning algorithms, including classification and
-                      recommendations models. Applied Python, TensorFlow, and
-                      scikit-learn to build and optimize algorithms, ensuring
-                      their seamless integration into client systems. Actively
-                      engaged with clients to present solutions, gather
-                      feedback, and iterate on designs.
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li class="timelineInverted">
-                <div class="timelineImage">
-                  <h4>Be Part <br />Of My <br />Story!</h4>
-                </div>
-              </li>
-            </ul>
-          </div>
+/* background glow */
+.glow{position:fixed;inset:0;z-index:-1;pointer-events:none}
+.glow::before,.glow::after{content:"";position:absolute;width:520px;height:520px;border-radius:50%;filter:blur(140px);opacity:.16}
+.glow::before{background:#6c8cff;top:-160px;left:-120px}
+.glow::after{background:#38d9c3;bottom:-200px;right:-140px}
+
+/* nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:50;transition:.3s;padding:18px 0}
+nav.scrolled{background:rgba(11,15,26,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);padding:12px 0}
+.nav-inner{display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:'Sora',sans-serif;font-weight:800;font-size:1.15rem}
+.logo span{background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.links{display:flex;gap:26px;font-size:.92rem;font-weight:500}
+.links a{color:var(--muted);transition:.2s;position:relative}
+.links a:hover,.links a.active{color:var(--text)}
+.links a.active::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;background:var(--grad);border-radius:2px}
+.burger{display:none;background:none;border:0;color:var(--text);font-size:1.5rem;cursor:pointer}
+
+/* hero */
+.hero{min-height:100vh;display:flex;align-items:center;padding:120px 0 60px}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center}
+.kicker{color:var(--accent2);font-weight:600;letter-spacing:.18em;text-transform:uppercase;font-size:.8rem;margin-bottom:14px}
+.hero h1{font-size:clamp(2.4rem,5.5vw,4rem);font-weight:800;margin-bottom:14px}
+.hero h1 span{background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.type-line{font-size:clamp(1.1rem,2.4vw,1.5rem);color:var(--muted);min-height:2.2em;font-family:'Sora',sans-serif;font-weight:600}
+.type-line .caret{display:inline-block;width:3px;height:1.1em;background:var(--accent2);vertical-align:-2px;margin-left:3px;animation:blink 1s step-end infinite}
+@keyframes blink{50%{opacity:0}}
+.hero p.lead{margin:18px 0 30px;color:var(--muted);max-width:560px}
+.btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn{padding:13px 26px;border-radius:12px;font-weight:600;font-size:.95rem;transition:.25s;display:inline-flex;align-items:center;gap:8px}
+.btn-primary{background:var(--grad);color:#0b0f1a}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 30px -8px #6c8cff88}
+.btn-ghost{border:1px solid var(--line);color:var(--text)}
+.btn-ghost:hover{border-color:var(--accent);transform:translateY(-2px)}
+.hero-img{position:relative;justify-self:center}
+.hero-img::before{content:"";position:absolute;inset:-14px;border-radius:50%;background:var(--grad);opacity:.85;filter:blur(2px);animation:spin 9s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.hero-img img{position:relative;width:300px;height:300px;object-fit:cover;border-radius:50%;border:6px solid var(--bg)}
+.socials{display:flex;gap:14px;margin-top:26px}
+.socials a{width:42px;height:42px;border:1px solid var(--line);border-radius:12px;display:grid;place-items:center;color:var(--muted);transition:.25s;font-size:1.05rem}
+.socials a:hover{color:var(--text);border-color:var(--accent);transform:translateY(-3px)}
+
+/* sections */
+section{padding:90px 0}
+.sec-head{margin-bottom:48px}
+.sec-head .kicker{margin-bottom:8px}
+.sec-head h2{font-size:clamp(1.7rem,3.6vw,2.4rem);font-weight:800}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:44px;align-items:start}
+.about-grid p{color:var(--muted);margin-bottom:16px}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px;text-align:center;transition:.25s}
+.stat:hover{transform:translateY(-4px);border-color:var(--accent)}
+.stat b{display:block;font-family:'Sora',sans-serif;font-size:1.9rem;background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.stat small{color:var(--muted);font-size:.82rem}
+
+/* timeline */
+.timeline{position:relative;margin-left:10px}
+.timeline::before{content:"";position:absolute;left:0;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--accent),var(--accent2))}
+.titem{position:relative;padding:0 0 44px 34px}
+.titem:last-child{padding-bottom:0}
+.titem::before{content:"";position:absolute;left:-6px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:3px solid var(--accent2)}
+.titem .when{color:var(--accent2);font-size:.85rem;font-weight:600;letter-spacing:.04em}
+.titem h3{font-size:1.15rem;margin:6px 0 2px}
+.titem .where{color:var(--muted);font-size:.92rem;margin-bottom:10px}
+.titem ul{list-style:none}
+.titem li{color:var(--muted);font-size:.95rem;padding-left:18px;position:relative;margin-bottom:7px}
+.titem li::before{content:"▹";position:absolute;left:0;color:var(--accent)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.tag{font-size:.75rem;font-weight:600;color:var(--accent2);background:#38d9c31a;border:1px solid #38d9c333;border-radius:999px;padding:4px 12px}
+
+/* projects */
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:24px}
+.pcard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;transition:.3s}
+.pcard:hover{transform:translateY(-6px);border-color:var(--accent);box-shadow:0 20px 44px -18px #000c}
+.pcard .thumb{height:180px;overflow:hidden;background:var(--card2)}
+.pcard .thumb img{width:100%;height:100%;object-fit:cover;transition:.45s}
+.pcard:hover .thumb img{transform:scale(1.06)}
+.pcard .body{padding:22px;display:flex;flex-direction:column;flex:1}
+.pcard h3{font-size:1.08rem;margin-bottom:8px}
+.pcard p{color:var(--muted);font-size:.9rem;flex:1}
+.pcard .tags{margin:14px 0}
+.plinks{display:flex;gap:16px;font-size:.88rem;font-weight:600}
+.plinks a{color:var(--accent);transition:.2s}
+.plinks a:hover{color:var(--accent2)}
+
+/* skills */
+.sgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:20px}
+.scard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px;transition:.25s}
+.scard:hover{transform:translateY(-4px);border-color:var(--accent)}
+.scard h3{font-size:1rem;margin-bottom:14px;display:flex;align-items:center;gap:10px}
+.scard h3 i{font-style:normal}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-size:.8rem;color:var(--text);background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:5px 12px}
+
+/* contact */
+.contact-box{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:56px 40px;text-align:center}
+.contact-box p{color:var(--muted);max-width:520px;margin:12px auto 30px}
+.contact-links{display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
+
+footer{border-top:1px solid var(--line);padding:28px 0;text-align:center;color:var(--muted);font-size:.85rem}
+footer a{color:var(--accent)}
+
+/* to-top */
+#toTop{position:fixed;right:22px;bottom:22px;width:46px;height:46px;border-radius:12px;background:var(--grad);color:#0b0f1a;border:0;font-size:1.2rem;cursor:pointer;opacity:0;pointer-events:none;transition:.3s;z-index:40}
+#toTop.show{opacity:1;pointer-events:auto}
+
+@media(max-width:840px){
+  .hero-grid{grid-template-columns:1fr;text-align:center}
+  .hero-img{order:-1}.hero-img img{width:220px;height:220px}
+  .hero p.lead{margin-inline:auto}.btns,.socials{justify-content:center}
+  .about-grid{grid-template-columns:1fr}
+  .links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--bg2);flex-direction:column;padding:20px 24px;border-bottom:1px solid var(--line)}
+  .links.open{display:flex}
+  .burger{display:block}
+}
+</style>
+</head>
+<body>
+<div class="glow"></div>
+
+<nav id="nav">
+  <div class="wrap nav-inner">
+    <a class="logo" href="#top">Rutuja<span>.dev</span></a>
+    <button class="burger" id="burger" aria-label="menu">☰</button>
+    <div class="links" id="links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="kicker">Hello, I'm</div>
+      <h1>Rutuja <span>Padgilwar</span></h1>
+      <div class="type-line"><span id="typed"></span><span class="caret"></span></div>
+      <p class="lead">I build scalable backend systems and production AI/LLM applications — from agentic RAG pipelines over SEC filings to healthcare platforms serving 100,000+ patients.</p>
+      <div class="btns">
+        <a class="btn btn-primary" href="#projects">View My Work →</a>
+        <a class="btn btn-ghost" href="mailto:rutuja.padgilwar@gmail.com">Get In Touch</a>
+      </div>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/rutuja-padgilwar/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+        <a href="https://github.com/rutujapadgilwar" target="_blank" rel="noopener" aria-label="GitHub">gh</a>
+        <a href="https://leetcode.com/u/rutuja0609/" target="_blank" rel="noopener" aria-label="LeetCode">lc</a>
+        <a href="mailto:rutuja.padgilwar@gmail.com" aria-label="Email">✉</a>
+      </div>
+    </div>
+    <div class="hero-img"><img src="img/rutuja_self.png" alt="Rutuja Padgilwar"></div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head reveal"><div class="kicker">About</div><h2>Engineer who ships end to end</h2></div>
+    <div class="about-grid">
+      <div class="reveal">
+        <p>I'm a software engineer with <b>5+ years of experience</b> across backend development, cloud infrastructure, and applied AI. Currently a Forward Deployed Engineer at <b>BrokerHQ AI</b>, I work directly with users to turn ambiguous business problems into production software.</p>
+        <p>My recent work centers on <b>GenAI systems that hold up in production</b> — agentic LLM workflows, RAG pipelines with measured accuracy, and the APIs and infrastructure underneath them. Before that, I built healthcare applications for CVS Pharmacy patients and enterprise microservices at Infosys.</p>
+        <p>I hold an M.S. in Computer Science from Portland State University (GPA 3.8) and love owning features from architecture through deployment and monitoring.</p>
+      </div>
+      <div class="stats reveal">
+        <div class="stat"><b>5+</b><small>Years of Experience</small></div>
+        <div class="stat"><b>100K+</b><small>Patients Served by My Code</small></div>
+        <div class="stat"><b>87%</b><small>RAG Answer Accuracy</small></div>
+        <div class="stat"><b>15+</b><small>Projects Built</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="sec-head reveal"><div class="kicker">Career</div><h2>Work Experience</h2></div>
+    <div class="timeline">
+      <div class="titem reveal">
+        <div class="when">May 2025 — Present</div>
+        <h3>Forward Deployed Engineer · BrokerHQ AI</h3>
+        <div class="where">Remote, USA</div>
+        <ul>
+          <li>Architected an AI-powered broker copilot — Python/FastAPI backend, React frontend — centralizing company intelligence for instant deal insights.</li>
+          <li>Built agentic LLM workflows (GPT-4o, Gemini) with RAG pipelines over SEC filings, cutting manual broker research from hours to minutes.</li>
+          <li>Shipped predictive lead-generation models forecasting tenant relocations 8–12 months ahead.</li>
+          <li>Scaled AWS infrastructure (EC2, RDS, S3, Lambda) with Docker + GitHub Actions CI/CD.</li>
+        </ul>
+        <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">LangChain</span><span class="tag">RAG</span><span class="tag">AWS</span><span class="tag">React</span></div>
+      </div>
+      <div class="titem reveal">
+        <div class="when">May 2024 — May 2025</div>
+        <h3>Software Engineer · Global Tech Teams (Client: CVS Pharmacy)</h3>
+        <div class="where">Bellevue, WA, USA</div>
+        <ul>
+          <li>Led backend engineering for healthcare apps serving 100,000+ patients — Java (Spring Boot) and Node.js APIs with React/TypeScript frontends; cut processing time 30%.</li>
+          <li>Integrated AWS (Redshift, Lambda, S3, ECS, Kafka) for event-driven, serverless data pipelines — 30% lower latency.</li>
+          <li>Built AI-powered prescription recommendation models (Python, SQL, LLMs) and automated QA achieving 95% pre-production bug detection.</li>
+        </ul>
+        <div class="tags"><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">Node.js</span><span class="tag">AWS</span><span class="tag">Kafka</span><span class="tag">LLMs</span></div>
+      </div>
+      <div class="titem reveal">
+        <div class="when">Jun 2021 — Jul 2022</div>
+        <h3>Software Engineer · Infosys</h3>
+        <div class="where">Pune, India</div>
+        <ul>
+          <li>Led backend migration of an internal networking tool to cloud-native microservices, cutting client onboarding time 60%.</li>
+          <li>Built distributed REST APIs sustaining 99.9% uptime with a 30% increase in concurrent users; implemented OAuth 2.0 security.</li>
+        </ul>
+        <div class="tags"><span class="tag">Java</span><span class="tag">Microservices</span><span class="tag">REST APIs</span><span class="tag">OAuth 2.0</span></div>
+      </div>
+      <div class="titem reveal">
+        <div class="when">Jun 2019 — Jun 2021</div>
+        <h3>Software Developer · Mindbowser</h3>
+        <div class="where">Pune, India</div>
+        <ul>
+          <li>Spearheaded an AI recommendation system (Python, TensorFlow, Keras) that lifted user engagement 50%.</li>
+          <li>Deployed a serverless AWS inventory management system, cutting downtime 20%; integrated secure payment APIs (+15% success rate).</li>
+        </ul>
+        <div class="tags"><span class="tag">Python</span><span class="tag">TensorFlow</span><span class="tag">AWS Lambda</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="sec-head reveal"><div class="kicker">Portfolio</div><h2>Featured Projects</h2></div>
+    <div class="pgrid">
+      <div class="pcard reveal">
+        <div class="thumb"><img src="img/chatBot.gif" alt="PSU HelpBot" loading="lazy"></div>
+        <div class="body">
+          <h3>PSU HelpBot — RAG Q&A System</h3>
+          <p>Question-answering system for PSU graduate programs using LangChain + OpenAI LLMs. RAG pipeline with similarity search and MMR, evaluated with BERTScore and RAGAS — 87% answer accuracy.</p>
+          <div class="tags"><span class="tag">LangChain</span><span class="tag">RAG</span><span class="tag">OpenAI</span><span class="tag">Streamlit</span></div>
+          <div class="plinks"><a href="https://psu-buddy-dpmmaekkruxdlracwvfjfn.streamlit.app/" target="_blank" rel="noopener">Live Demo ↗</a><a href="https://github.com/rutujapadgilwar/PSU-HelpBot-with-Langchain-Integration" target="_blank" rel="noopener">GitHub ↗</a></div>
         </div>
       </div>
-    </section>
-    <!--Project section-->
-    <section id="projects">
-      <div class="projects">
-        <h3 class="sectionHeading">Academic Projects</h3>
-        <div>
-          <div class="projectCard">
-            <div class="projectInfo">
-              <h4 class="projectTitle">
-                PSU HelpBot With Langchain Integration
-              </h4>
-              <div class="projectLinks">
-                <a
-                  class="projectLink"
-                  href="https://psu-buddy-dpmmaekkruxdlracwvfjfn.streamlit.app/"
-                  ><div class="linkButton">
-                    <i class="fa fa-globe"></i>Demo
-                  </div></a
-                ><a
-                  class="projectLink"
-                  href="https://github.com/rutujapadgilwar/PSU-HelpBot-with-Langchain-Integration
-                "
-                  ><div class="linkButton">
-                    <i class="fab fa-github"></i><span>Github</span>
-                  </div></a
-                >
-              </div>
-              <h5 class="projectPurpose">
-                Project Description: This question-answering system helps
-                students quickly find the information they need about PSU's
-                graduate programs, making it easier for them to make decisions.
-                It uses advanced AI models like OpenAI's GPT-3.5 and web
-                scraping to provide accurate and fast results.
-              </h5>
-              <p class="projectInfoPara">
-                In this project, I developed a question-answering system to help
-                students efficiently access information about PSU's graduate
-                programs. Utilizing Langchain and OpenAI's advanced language
-                models (including GPT-3.5-turbo-instruct and Davinci-002), I
-                implemented web scraping techniques to gather targeted data from
-                PSU's graduate and computer science department websites. The
-                system employs a Retrieval Augmented Generation (RAG) approach,
-                utilizing similarity search and MMR techniques within the
-                RetrievalQAchain to ensure accurate information retrieval. The
-                final solution was fine-tuned with BERTScore and RAGAS metrics,
-                achieving 87% accuracy and providing a user-friendly experience.
-              </p>
-              <div class="projectTags">
-                <h6 class="tag">Langchain</h6>
-                <h6 class="tag">Flask</h6>
-                <h6 class="tag">streamlit</h6>
-                <h6 class="tag">OpenAI</h6>
-                <h6 class="tag">BERT</h6>
-                <h6 class="tag">RAG</h6>
-                <h6 class="tag">LLMs</h6>
-              </div>
-            </div>
-            <img
-              src="../img/chatBot.gif"
-              alt="DialogflowChatbot"
-              class="projectPhoto"
-            />
-          </div>
-          <div class="projectCard">
-            <div class="projectInfo">
-              <h4 class="projectTitle">
-                National Park Chatbot using dialogflow and flask
-              </h4>
-              <div class="projectLinks">
-                <a
-                  class="projectLink"
-                  href="https://national-park-chatbot.netlify.app"
-                  ><div class="linkButton">
-                    <i class="fa fa-globe"></i>Demo
-                  </div></a
-                ><a
-                  class="projectLink"
-                  href="https://github.com/rutujapadgilwar/National-Park-Chatbot
-                "
-                  ><div class="linkButton">
-                    <i class="fab fa-github"></i><span>Github</span>
-                  </div></a
-                >
-              </div>
-              <h5 class="projectPurpose">
-                Project Description: This Flask application serves as a webhook
-                for Dialogflow, facilitating interaction with a National Park
-                Chatbot. Integrated with features such as activities, alerts,
-                and weather updates, the chatbot enhances user experience in
-                accessing information about national parks.
-              </h5>
-              <p class="projectInfoPara">
-                Leveraged advanced design principles to enhance user engagement
-                and experience, building upon the foundation laid by the initial
-                project. Incorporated features such as Welcome Intent, Activity
-                and Alert Information retrieval, Weather Information, and
-                State-based Park Name listing, utilizing open-source Weather
-                APIs and the National Park API to fetch data dynamically.
-                Employed a modern tech stack including Flask, Dialogflow, and
-                React to ensure scalability and maintainability. Deployed the
-                application on Render.com, seamlessly integrating it with
-                Dialogflow Messenger and Dialogflow Web Demo for voice
-                assistance.
-              </p>
-              <div class="projectTags">
-                <h6 class="tag">Dialogflow ES</h6>
-                <h6 class="tag">Flask</h6>
-                <h6 class="tag">React JS</h6>
-                <h6 class="tag">Voice Assistance</h6>
-                <h6 class="tag">Web Developement</h6>
-                <h6 class="tag">Rest API</h6>
-                <h6 class="tag">Weather API</h6>
-                <h6 class="tag">National Park API</h6>
-              </div>
-            </div>
-            <img
-              src="../img/chatBot.gif"
-              alt="DialogflowChatbot"
-              class="projectPhoto"
-            />
-          </div>
-          <div class="projectCard">
-            <div class="projectInfo">
-              <h4 class="projectTitle">
-                Advanced NPL for classify the consumer complaints
-              </h4>
-              <div class="projectLinks">
-                <a
-                  class="projectLink"
-                  href="https://github.com/rutujapadgilwar/Consumer-Complaint-Content-Classification-NLP
-                "
-                  ><div class="linkButton">
-                    <i class="fab fa-github"></i><span>Github</span>
-                  </div></a
-                >
-              </div>
-              <h5 class="projectPurpose">
-                Project Description: This project focuses on developing a
-                Natural Language Processing (NLP) model to streamline the
-                categorization of consumer complaints received by the Consumer
-                Financial Protection Bureau (CFPB).Consumer complaint narratives
-                serve as inputs, and the model classifies them into five
-                consolidated product classes: Credit Reporting, Debt Collection,
-                Mortgages and Loans, Credit Cards, and Retail Banking.
-              </h5>
-              <p class="projectInfoPara">
-                Developed and implemented a highly accurate NLP system,
-                achieving an impressive 84% accuracy rate using XGBoost on a
-                dataset comprising 625,545 consumer complaints. Demonstrated
-                proficiency in various stages of the data science pipeline,
-                including data preprocessing, model evaluation, and ethical
-                considerations, aligning with industry best practices. Leveraged
-                advanced pre-trained language models such as BERT, GPT2
-                resulting in an 82% accuracy rate in categorizing consumer
-                complaints, showcasing adaptability and expertise in utilizing
-                state-of-the-art techniques. Created Flask web application to
-                provide a user-friendly interface to classify the consumer
-                complaints easily.
-              </p>
-              <div class="projectTags">
-                <h6 class="tag">Natural Language Processing</h6>
-                <h6 class="tag">Text classification</h6>
-                <h6 class="tag">Pre Trained Models</h6>
-                <h6 class="tag">BERT</h6>
-                <h6 class="tag">Python</h6>
-                <h6 class="tag">Model Evaluation</h6>
-                <h6 class="tag">Baseline Models</h6>
-                <h6 class="tag">Flask</h6>
-              </div>
-            </div>
-            <img
-              src="../img/NLPProject.png"
-              alt="NLP_project"
-              class="projectPhoto"
-            />
-          </div>
-          <div class="projectCard">
-            <div class="projectInfo">
-              <h4 class="projectTitle">National Park Dashboard</h4>
-              <div class="projectLinks">
-                <a
-                  class="projectLink"
-                  href="https://parks-dashboard.netlify.app/"
-                  ><div class="linkButton">
-                    <i class="fa fa-globe"></i>Demo
-                  </div></a
-                ><a
-                  class="projectLink"
-                  href="https://github.com/rutujapadgilwar/Park-Dashboard
-                "
-                  ><div class="linkButton">
-                    <i class="fab fa-github"></i><span>Github</span>
-                  </div></a
-                >
-              </div>
-              <h5 class="projectPurpose">
-                Project Description: Park Dashboard uses the national park API
-                for detailed stats and info on different parks. Users can search
-                by name to find current weather, alerts, activities, trails,
-                photos, fees, and contacts. We also offer charts for park counts
-                by state, alerts, activities, amenities, and overall national
-                park count.
-              </h5>
-              <p class="projectInfoPara">
-                My responsibilities encompassed designing and implementing
-                several key elements. These included crafting the navbar
-                section, developing informative card components featuring
-                details like weather forecasts, park activities, recommended
-                attractions, campgrounds, and more. Additionally, I constructed
-                line charts to showcase the 5-day weather forecast, generated
-                bar charts for state vs. national park comparisons, as well as
-                state vs. generic parks analyses. Furthermore, I designed 3D pie
-                charts to visualize alerts categorized across all parks and
-                national parks. Additionally, I integrated pop-up modal
-                components to enhance user interaction.
-              </p>
-              <div class="projectTags">
-                <h6 class="tag">ReactJS</h6>
-                <h6 class="tag">Material UI</h6>
-                <h6 class="tag">Html/Css</h6>
-                <h6 class="tag">D3.js</h6>
-                <h6 class="tag">Axios</h6>
-                <h6 class="tag">Redux</h6>
-                <h6 class="tag">Chart.js</h6>
-                <h6 class="tag">Google Maps API</h6>
-                <h6 class="tag">Rest API</h6>
-              </div>
-            </div>
-            <img
-              src="https://blog.toryburch.com/wp-content/uploads/2020/12/Culture_NPSMaps_960_TD_Jan_21.gif"
-              alt="travel memory project"
-              class="projectPhoto"
-            />
-          </div>
-          <div class="projectCard">
-            <div class="projectInfo">
-              <h4 class="projectTitle">Digital Souvenir - Travel Memories</h4>
-              <div class="projectLinks">
-                <a
-                  class="projectLink"
-                  href="https://digital-travel-memories.netlify.app/"
-                  ><div class="linkButton">
-                    <i class="fa fa-globe"></i>Demo
-                  </div></a
-                ><a
-                  class="projectLink"
-                  href="https://github.com/rutujapadgilwar/image_gallery_fullstack
-                "
-                  ><div class="linkButton">
-                    <i class="fab fa-github"></i><span>Github</span>
-                  </div></a
-                >
-              </div>
-              <h5 class="projectPurpose">
-                Project Purpose: People always buy souvenirs whenever they
-                travel places. With memories now people will have the
-                opportunity to store the souvenirs digitally with personalized
-                images and thus share them with others.
-              </h5>
-              <p class="projectInfoPara">
-                My Responsibility: I focused on configuring and linking
-                Firebase, enabling seamless image and metadata storage. I also
-                developed essential features like updates, deletions, and
-                searches. Utilizing the Google Search API's autocomplete, I
-                enhanced location searches. The front-end came alive with React
-                Bootstrap, where I crafted modals, forms, and engaging search
-                cards.
-              </p>
-              <div class="projectTags">
-                <h6 class="tag">ReactJS</h6>
-                <h6 class="tag">Javascript</h6>
-                <h6 class="tag">Firebase</h6>
-                <h6 class="tag">Html/Css</h6>
-              </div>
-            </div>
-            <img
-              src="../img/travelMemories.gif"
-              alt="travel memory project"
-              class="projectPhoto"
-            />
-          </div>
-          <div class="projectCard">
-            <div class="projectInfo">
-              <h4 class="projectTitle">Book Recommendation System</h4>
-              <div class="projectLinks">
-                <a
-                  class="projectLink"
-                  href="https://github.com/rutujapadgilwar/FindYourNextBook"
-                  ><div class="linkButton">
-                    <i class="fab fa-github"></i>Github
-                  </div></a
-                >
-                <a
-                  class="projectLink"
-                  href="http://findyournextbook.pythonanywhere.com/"
-                  ><div class="linkButton">
-                    <i class="fa fa-globe"></i>Demo
-                  </div></a
-                >
-              </div>
-              <h5 class="projectPurpose">
-                The purpose of this project is to build a model which recommend
-                books to readers based on popularity parameters and
-                collaborative approach.
-              </h5>
-              <p class="projectInfoPara">
-                This website offers personalized book recommendations in five
-                categories: similar books, authors, publishers, places, and
-                years. The backend, developed in Python, handles the data and
-                recommendation logic, while the frontend, created with Flask,
-                showcases books grouped by these categories. Users enjoy
-                customized book suggestions tailored to their preferences.
-              </p>
-              <div class="projectTags">
-                <h6 class="tag">Python</h6>
-                <h6 class="tag">Flask</h6>
-                <h6 class="tag">Html/Css</h6>
-              </div>
-            </div>
-            <img src="../img/books.gif" alt="books gif" class="projectPhoto" />
-          </div>
-          <div class="projectCard">
-            <div class="projectInfo">
-              <h4 class="projectTitle">Website to collect ASL video dataset</h4>
-              <div class="projectLinks">
-                <a class="projectLink" href="https://asl-dataset.web.app"
-                  ><div class="linkButton">
-                    <i class="fa fa-globe"></i>Demo
-                  </div></a
-                >
-              </div>
-              <h5 class="projectPurpose">
-                This project aims to bridge communication gaps, enabling
-                seamless interaction between the hearing and non-hearing
-                communities. We're crafting a robust framework that instantly
-                converts sign language into text or voice
-                <br />
-              </h5>
-              <p>
-                To achieve this objective, the project necessitates efficient
-                datasets. To meet this goal, I've designed a website to collect
-                vital datasets efficiently.
-              </p>
-              <p class="projectInfoPara">
-                This website is built upon the foundation of ReactJS, HTML/CSS,
-                and Firebase technologies. Its primary function is to gather
-                essential data encompassing 50 distinct categories of American
-                Sign Language (ASL) and Indian Sign Language (ISL)
-              </p>
-              <div class="projectTags">
-                <h6 class="tag">ReactJS</h6>
-                <h6 class="tag">Javascript</h6>
-                <h6 class="tag">Firebase</h6>
-                <h6 class="tag">Html/Css</h6>
-              </div>
-            </div>
-            <img
-              src="../img/ASLProject.webp"
-              alt="asl gif"
-              class="projectPhoto"
-            />
-          </div>
-          <div class="projectCard">
-            <div class="projectInfo">
-              <h4 class="projectTitle">Rubik’s Cube Solver Using Python</h4>
-              <div class="projectLinks">
-                <a
-                  class="projectLink"
-                  href="https://github.com/rutujapadgilwar06/rubik-s-cube-solver
-                "
-                  ><div class="linkButton">
-                    <i class="fab fa-github"></i>Github
-                  </div></a
-                >
-              </div>
-              <h5 class="projectPurpose">
-                Project Purpose: Design an application to solve the Rubik’s Cube
-                using a camera
-              </h5>
-              <p class="projectInfoPara" style="text-align: justify">
-                I've built a program that takes pictures of all the cube's sides
-                using the camera, and then it guides users through the steps to
-                solve it. To make this possible, I've utilized a Python module
-                called Kociemba, which has smart algorithms to help with
-                solving. This project brings together the camera, programming,
-                and clever algorithms to make solving a Rubik's Cube easier and
-                more enjoyable.
-              </p>
-              <div class="projectTags">
-                <h6 class="tag">Python</h6>
-              </div>
-            </div>
-            <img
-              src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/000/590/516/datas/original.gif"
-              class="projectPhoto"
-              alt="cube gif"
-            />
-          </div>
-        </div>
-        <div class="resumeButton">
-          <a href="../src/resume.html" class="vieMyResumeButton" target="_blank"
-            >VIEW MY RESUME</a
-          >
+      <div class="pcard reveal">
+        <div class="thumb"><img src="img/NLPProject.png" alt="Consumer complaint NLP classifier" loading="lazy"></div>
+        <div class="body">
+          <h3>Consumer Complaint NLP Classifier</h3>
+          <p>NLP system classifying 625K+ CFPB consumer complaints into five product classes — 84% accuracy with XGBoost, plus BERT/GPT-2 transfer-learning baselines and a Flask UI.</p>
+          <div class="tags"><span class="tag">NLP</span><span class="tag">BERT</span><span class="tag">XGBoost</span><span class="tag">Flask</span></div>
+          <div class="plinks"><a href="https://github.com/rutujapadgilwar/Consumer-Complaint-Content-Classification-NLP" target="_blank" rel="noopener">GitHub ↗</a></div>
         </div>
       </div>
-    </section>
-    <!-- Contact Section -->
-    <section id="contact">
-      <div class="contactBackground">
-        <h1 class="sectionHeading">Let's Connect!</h1>
-        <div class="d-flex align-items-center justify-content-center">
-          <br />
-          <form
-            class="d-inline-block p-4 bg-white h-80% border border-dark"
-            id="form"
-          >
-            <div class="form-group row">
-              <div class="col-sm-3 col-form-label">
-                <label for="name">Name:</label>
-              </div>
-              <div class="col-sm-9">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  placeholder="Enter your full name"
-                  autocomplete="name"
-                />
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="email" class="col-sm-3 col-form-label">Email:</label>
-              <div class="col-sm-9">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  placeholder="example@email.com"
-                  autocomplete="email"
-                />
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="feedback" class="col-sm-4 col-form-label">
-                Feedback:</label
-              >
-              <div class="col-sm-12">
-                <textarea
-                  class="form-control"
-                  id="feedback"
-                  placeholder="Please do leave a message..."
-                ></textarea>
-              </div>
-            </div>
-            <br />
-            <div class="form-group row">
-              <div class="d-flex justify-content-center">
-                <div class="col-sm-3">
-                  <button
-                    type="submit"
-                    class="contactBtn"
-                    onclick="submitForm()"
-                  >
-                    Submit
-                  </button>
-                </div>
-              </div>
-            </div>
-          </form>
+      <div class="pcard reveal">
+        <div class="thumb"><img src="img/chatBot.gif" alt="National Park chatbot" loading="lazy"></div>
+        <div class="body">
+          <h3>National Park Chatbot & Voice Assistant</h3>
+          <p>Conversational AI over the National Park Service and OpenWeather APIs — Dialogflow ES voice/chat, Flask webhook backend, deployed on Render with real-time alerts, activities, and weather.</p>
+          <div class="tags"><span class="tag">Dialogflow</span><span class="tag">Flask</span><span class="tag">REST APIs</span></div>
+          <div class="plinks"><a href="https://national-park-chatbot.netlify.app" target="_blank" rel="noopener">Live Demo ↗</a><a href="https://github.com/rutujapadgilwar/National-Park-Chatbot" target="_blank" rel="noopener">GitHub ↗</a></div>
         </div>
       </div>
-    </section>
-    <!--Footer Section-->
-    <footer>
-      <div class="footercontainer">
-        <div class="row">
-          <div class="col-md-4">
-            <span class="copyright">Rutuja Padgilwar&copy;2023</span>
-          </div>
-          <br />
-          <div class="col-md-4">
-            <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a
-                  aria-label="linkedin link"
-                  href="https://www.linkedin.com/in/rutuja-padgilwar/"
-                  target="_blank"
-                >
-                  <i class="fab fa-linkedin"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a
-                  href="https://github.com/rutujapadgilwar/"
-                  aria-label="github link"
-                >
-                  <i class="fab fa-github"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="mailto:rpadgil2@pdx.edu" aria-label="gmail link">
-                  <i class="fas fa-envelope-square"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
+      <div class="pcard reveal">
+        <div class="thumb" style="display:grid;place-items:center;font-size:3.2rem;background:linear-gradient(135deg,#1b2a4a,#12403c)">🏞️</div>
+        <div class="body">
+          <h3>National Park Dashboard</h3>
+          <p>Interactive React dashboard for 55+ U.S. national parks — 5-day forecast line charts, state comparisons, 3D alert pie charts, and Google Maps integration with Redux state management.</p>
+          <div class="tags"><span class="tag">React</span><span class="tag">D3.js</span><span class="tag">Chart.js</span><span class="tag">Redux</span></div>
+          <div class="plinks"><a href="https://parks-dashboard.netlify.app/" target="_blank" rel="noopener">Live Demo ↗</a><a href="https://github.com/rutujapadgilwar/Park-Dashboard" target="_blank" rel="noopener">GitHub ↗</a></div>
         </div>
       </div>
-    </footer>
-  </body>
+      <div class="pcard reveal">
+        <div class="thumb"><img src="img/ASLProject.webp" alt="ASL dataset website" loading="lazy"></div>
+        <div class="body">
+          <h3>ASL/ISL Sign Language Platform</h3>
+          <p>CNN models (TensorFlow, OpenCV) translating sign language to text in real time with 60%+ cross-dataset accuracy, plus a React + Firebase site for collecting a 50-category video dataset.</p>
+          <div class="tags"><span class="tag">TensorFlow</span><span class="tag">OpenCV</span><span class="tag">React</span><span class="tag">Firebase</span></div>
+          <div class="plinks"><a href="https://asl-dataset.web.app" target="_blank" rel="noopener">Live Demo ↗</a></div>
+        </div>
+      </div>
+      <div class="pcard reveal">
+        <div class="thumb"><img src="img/books.gif" alt="Book recommendation system" loading="lazy"></div>
+        <div class="body">
+          <h3>Book Recommendation System</h3>
+          <p>Collaborative-filtering recommendation engine suggesting books across five categories — similar titles, authors, publishers, places, and years — with a Flask front end.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">Flask</span><span class="tag">Collaborative Filtering</span></div>
+          <div class="plinks"><a href="http://findyournextbook.pythonanywhere.com/" target="_blank" rel="noopener">Live Demo ↗</a><a href="https://github.com/rutujapadgilwar/FindYourNextBook" target="_blank" rel="noopener">GitHub ↗</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head reveal"><div class="kicker">Toolbox</div><h2>Technical Skills</h2></div>
+    <div class="sgrid">
+      <div class="scard reveal"><h3><i>⌨️</i> Languages</h3><div class="chips"><span class="chip">Python</span><span class="chip">Java</span><span class="chip">SQL</span><span class="chip">JavaScript</span><span class="chip">TypeScript</span></div></div>
+      <div class="scard reveal"><h3><i>⚙️</i> Backend</h3><div class="chips"><span class="chip">FastAPI</span><span class="chip">Spring Boot</span><span class="chip">Node.js</span><span class="chip">Flask</span><span class="chip">Django</span><span class="chip">REST APIs</span><span class="chip">GraphQL</span><span class="chip">Microservices</span></div></div>
+      <div class="scard reveal"><h3><i>🤖</i> AI / GenAI</h3><div class="chips"><span class="chip">LLMs</span><span class="chip">RAG</span><span class="chip">LangChain</span><span class="chip">Agentic Workflows</span><span class="chip">TensorFlow</span><span class="chip">PyTorch</span><span class="chip">NLP</span></div></div>
+      <div class="scard reveal"><h3><i>☁️</i> Cloud & Data</h3><div class="chips"><span class="chip">AWS</span><span class="chip">Lambda</span><span class="chip">EC2</span><span class="chip">S3</span><span class="chip">RDS</span><span class="chip">Redshift</span><span class="chip">Kafka</span><span class="chip">PostgreSQL</span><span class="chip">MongoDB</span></div></div>
+      <div class="scard reveal"><h3><i>🎨</i> Frontend</h3><div class="chips"><span class="chip">React</span><span class="chip">React Native</span><span class="chip">Vue.js</span><span class="chip">Chart.js</span><span class="chip">Bootstrap</span></div></div>
+      <div class="scard reveal"><h3><i>🚀</i> DevOps & Testing</h3><div class="chips"><span class="chip">Docker</span><span class="chip">Kubernetes</span><span class="chip">GitHub Actions</span><span class="chip">Jenkins</span><span class="chip">PyTest</span><span class="chip">JUnit</span><span class="chip">Selenium</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-box reveal">
+      <div class="kicker">Contact</div>
+      <h2>Let's Build Something Together</h2>
+      <p>I'm open to Software Engineer, Backend Engineer, and Forward Deployed Engineer roles. My inbox is always open — whether it's an opportunity, a question, or just tech talk.</p>
+      <div class="contact-links">
+        <a class="btn btn-primary" href="mailto:rutuja.padgilwar@gmail.com">✉ Email Me</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/rutuja-padgilwar/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-ghost" href="https://github.com/rutujapadgilwar" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">Designed & built by Rutuja Padgilwar · © <span id="year"></span></div>
+</footer>
+
+<button id="toTop" aria-label="Back to top">↑</button>
+
+<script>
+// year
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// nav scroll state + to-top
+const nav = document.getElementById('nav'), toTop = document.getElementById('toTop');
+addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', scrollY > 40);
+  toTop.classList.toggle('show', scrollY > 600);
+}, {passive:true});
+toTop.onclick = () => scrollTo({top:0, behavior:'smooth'});
+
+// mobile menu
+const burger = document.getElementById('burger'), links = document.getElementById('links');
+burger.onclick = () => links.classList.toggle('open');
+links.querySelectorAll('a').forEach(a => a.onclick = () => links.classList.remove('open'));
+
+// typewriter
+const roles = ['Software Engineer', 'Backend Developer', 'Forward Deployed Engineer', 'GenAI / LLM Builder'];
+const typed = document.getElementById('typed');
+let ri = 0, ci = 0, del = false;
+(function type(){
+  const word = roles[ri];
+  typed.textContent = word.slice(0, ci);
+  if (!del && ci < word.length) { ci++; setTimeout(type, 70); }
+  else if (!del) { del = true; setTimeout(type, 1600); }
+  else if (ci > 0) { ci--; setTimeout(type, 35); }
+  else { del = false; ri = (ri+1) % roles.length; setTimeout(type, 300); }
+})();
+
+// scroll reveal
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+}, {threshold:.12});
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+// active nav link
+const secs = document.querySelectorAll('section, header');
+const navLinks = document.querySelectorAll('.links a');
+const io2 = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id));
+    }
+  });
+}, {rootMargin:'-45% 0px -50% 0px'});
+secs.forEach(s => s.id && io2.observe(s));
+</script>
+</body>
 </html>
