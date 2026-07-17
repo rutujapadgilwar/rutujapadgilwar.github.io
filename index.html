@@ -21,20 +21,20 @@
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#faf7f2; --bg2:#ffffff; --card:#ffffff; --card2:#f3efe7;
-  --text:#1c1814; --muted:#6b6257; --line:rgba(28,24,20,.12);
-  --accent:#c2410c; --accent2:#be185d; --grad:linear-gradient(100deg,#ea580c,#e11d48);
-  --navbg:rgba(250,247,242,.86); --shadow:0 18px 40px -20px #c2410c2e;
+  --bg:#0b0f1a; --bg2:#0f1526; --card:#131b30; --card2:#182238;
+  --text:#e8ecf6; --muted:#93a0bc; --line:rgba(147,160,188,.14);
+  --accent:#6c8cff; --accent2:#38d9c3; --grad:linear-gradient(100deg,#6c8cff,#38d9c3);
+  --navbg:rgba(11,15,26,.82); --shadow:0 20px 44px -18px #000c;
   --radius:18px;
 }
-:root .glow::before,:root .glow::after{opacity:.07}
-html[data-theme="dark"]{
-  --bg:#161210; --bg2:#1d1815; --card:#211b17; --card2:#2a221d;
-  --text:#f2ece3; --muted:#a89c8d; --line:rgba(168,156,141,.16);
-  --accent:#ff8c42; --accent2:#f472a8; --grad:linear-gradient(100deg,#f97316,#f43f5e);
-  --navbg:rgba(22,18,16,.84); --shadow:0 20px 44px -18px #000c;
+:root .glow::before,:root .glow::after{opacity:.16}
+html[data-theme="light"]{
+  --bg:#f6f8fd; --bg2:#ffffff; --card:#ffffff; --card2:#eef2fb;
+  --text:#16203a; --muted:#5a6684; --line:rgba(22,32,58,.12);
+  --accent:#3b5bdb; --accent2:#0d9488; --grad:linear-gradient(100deg,#3b5bdb,#0d9488);
+  --navbg:rgba(246,248,253,.86); --shadow:0 18px 40px -20px #3b5bdb2e;
 }
-html[data-theme="dark"] .glow::before,html[data-theme="dark"] .glow::after{opacity:.13}
+html[data-theme="light"] .glow::before,html[data-theme="light"] .glow::after{opacity:.08}
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;line-height:1.65;overflow-x:hidden}
@@ -47,8 +47,8 @@ img{max-width:100%;display:block}
 /* background glow */
 .glow{position:fixed;inset:0;z-index:-1;pointer-events:none}
 .glow::before,.glow::after{content:"";position:absolute;width:520px;height:520px;border-radius:50%;filter:blur(140px);opacity:.16}
-.glow::before{background:#ea580c;top:-160px;left:-120px}
-.glow::after{background:#e11d48;bottom:-200px;right:-140px}
+.glow::before{background:#6c8cff;top:-160px;left:-120px}
+.glow::after{background:#38d9c3;bottom:-200px;right:-140px}
 
 /* nav */
 nav{position:fixed;top:0;left:0;right:0;z-index:50;transition:.3s;padding:18px 0}
@@ -302,7 +302,7 @@ footer a{color:var(--accent)}
         </div>
       </div>
       <div class="pcard reveal">
-        <div class="thumb"><img src="img/NLPBanner.png" alt="Consumer complaint NLP classifier" loading="lazy"></div>
+        <div class="thumb"><img src="img/NLPBanner_blue.png" alt="Consumer complaint NLP classifier" loading="lazy"></div>
         <div class="body">
           <h3>Consumer Complaint NLP Classifier</h3>
           <p>NLP system classifying 625K+ CFPB consumer complaints into five product classes — 84% accuracy with XGBoost, plus BERT/GPT-2 transfer-learning baselines and a Flask UI.</p>
@@ -416,7 +416,7 @@ function setTheme(t){
 }
 let saved = null;
 try { saved = localStorage.getItem('theme'); } catch(e){}
-setTheme(saved || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+setTheme(saved || 'dark');
 themeBtn.onclick = () => setTheme(document.documentElement.dataset.theme === 'light' ? 'dark' : 'light');
 
 // year
